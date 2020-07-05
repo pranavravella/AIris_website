@@ -1,2 +1,2 @@
-# AIris_website
+# Atheia
 Website for the Atheia project

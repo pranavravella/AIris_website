@@ -1,6 +1,6 @@
 function initialize() {
     mad = new Madeleine({
-        target: 'cad',
+        target: 'design',
         data: "resources/v3.stl",
         path: 'JS'
     });

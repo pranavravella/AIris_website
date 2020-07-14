@@ -1,34 +1,39 @@
-.cad {
-    width: 35% !important;
-    height: 20vh;
-    background-color: aqua;
+html,
+body {
+    overflow-x: hidden;
 }
 
-.stl {
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.row {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/*b1*/
+.b1 {
+    height: 100vh;
     width: 100%;
-    margin-top: 2vh;
+    background: linear-gradient(to bottom right, #fff, #fff, #fff, #3bb5fc, #06D6A0);
 }
 
-.stl *,
-.stl>div {
-    max-width: 100% !important;
-    min-width: 100% !important;
-    width: 100% !important;
-    display: block;
-    margin: auto;
-    cursor: grab;
-    border-radius: 1vh;
+.cad {
+    width: 45%;
+    position: absolute;
+    top: 10vh;
+    left: 5%;
+    animation: bounce 2s infinite alternate;
 }
 
-.stl *:active,
-.stl>div:active {
-    cursor: grabbing;
-}
+@keyframes bounce {
+    from {
+        transform: translateY(0px);
+    }
 
-.stl:hover {
-    cursor: grab;
-}
-
-.stl:active {
-    cursor: grabbing;
+    to {
+        transform: translateY(-2vh);
+    }
 }

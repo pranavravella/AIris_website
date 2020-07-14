@@ -29,6 +29,16 @@ body {
     animation: bounce 2s infinite alternate;
 }
 
+.cad-shadow {
+    position: absolute;
+    top: 45vw;
+    left: 18%;
+    background: radial-gradient(50% 50%, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+    width: 12%;
+    height: 4vh;
+    animation: shadow 2s infinite alternate;
+}
+
 @keyframes bounce {
     from {
         transform: translateY(0px);
@@ -36,6 +46,20 @@ body {
 
     to {
         transform: translateY(-2vh);
+    }
+}
+
+@keyframes shadow {
+    from {
+        width: 18%;
+        height: 6vh;
+        left: 15%;
+    }
+
+    to {
+        width: 12%;
+        height: 4vh;
+        left: 18%;
     }
 }
 

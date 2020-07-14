@@ -22,8 +22,9 @@ body {
 
 .cad {
     width: 45%;
+    min-width: 70vh;
     position: absolute;
-    top: 10vh;
+    top: calc(4vh + 3vw);
     left: 5%;
     animation: bounce 2s infinite alternate;
 }
@@ -36,4 +37,9 @@ body {
     to {
         transform: translateY(-2vh);
     }
+}
+
+.b2 {
+    height: 100vh;
+    width: 100%;
 }

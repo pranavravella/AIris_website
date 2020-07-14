@@ -34,8 +34,8 @@ body {
     top: 45vw;
     left: 18%;
     background: radial-gradient(50% 50%, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
-    width: 12%;
-    height: 4vh;
+    width: 14%;
+    height: 5vh;
     animation: shadow 2s infinite alternate;
 }
 
@@ -51,15 +51,11 @@ body {
 
 @keyframes shadow {
     from {
-        width: 18%;
-        height: 6vh;
-        left: 15%;
+        transform: scaleX(1.5) scaleY(1.5);
     }
 
     to {
-        width: 12%;
-        height: 4vh;
-        left: 18%;
+        transform: scaleX(1) scaleY(1);
     }
 }
 

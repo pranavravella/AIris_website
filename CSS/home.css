@@ -1,3 +1,42 @@
+@font-face {
+    font-family: "Nunito";
+    src: url("fonts/Nunito/Nunito-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("fonts/Nunito/Nunito-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("fonts/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("fonts/Lato/Lato-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("fonts/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("fonts/Metropolis/Metropolis-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("fonts/Metropolis/Metropolis-Bold.ttf");
+    font-weight: bold;
+}
+
 html,
 body {
     overflow-x: hidden;
@@ -15,27 +54,26 @@ body {
 
 /*b1*/
 .b1 {
-    height: 100vh;
+    min-height: 100vh;
+    padding-bottom: calc(2vh + 1vw);
+    height: auto;
     width: 100%;
     background: linear-gradient(to bottom right, #fff, #fff, #fff, #3bb5fc, #06D6A0);
 }
 
 .cad {
-    width: 45%;
-    min-width: 70vh;
-    position: absolute;
-    top: calc(4vh + 3vw);
-    left: 5%;
+    width: 100%;
+    min-width: 60vh;
+    margin-top: calc(4vh + 3vw);
     animation: bounce 2s infinite alternate;
 }
 
 .cad-shadow {
-    position: absolute;
-    top: 45vw;
-    left: 18%;
     background: radial-gradient(50% 50%, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
-    width: 14%;
-    height: 5vh;
+    width: 25%;
+    margin-left: 25%;
+    margin-top: calc(3vh + 2vw);
+    height: calc(2vh + 2vw);
     animation: shadow 2s infinite alternate;
 }
 
@@ -51,12 +89,32 @@ body {
 
 @keyframes shadow {
     from {
-        transform: scaleX(1.5) scaleY(1.5);
+        transform: scaleX(1.8) scaleY(1.5);
     }
 
     to {
         transform: scaleX(1) scaleY(1);
     }
+}
+
+.b1.row {
+    justify-content: center;
+}
+
+.b1 > div {
+    min-width: 60vh;
+    /* background: linear-gradient(to right, #fff, blue, #fff); */
+}
+
+.b1 .text {
+    width: 50%;
+}
+
+.b1 .title {
+    font-size: 7vh;
+    text-align: center;
+    padding-top: calc(4vh + 3vw);
+    font-family: "Metropolis";
 }
 
 .b2 {

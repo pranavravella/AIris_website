@@ -94,6 +94,7 @@ nav .right {
 /*b1*/
 .b1 {
     height: auto;
+    min-height: 100vh;
     position: relative;
     overflow: hidden;
     padding-bottom: calc(2vh + 1vw);
@@ -164,6 +165,7 @@ nav .right {
     text-align: center;
     font-family: "Lato";
     color: #fff;
+    margin-top: -7vh;
 }
 
 .b1 .label {
@@ -171,6 +173,7 @@ nav .right {
     text-align: center;
     font-family: "Lato";
     color: #fff;
+    margin-top: -4vh;
 }
 
 .b1 button {
@@ -198,7 +201,7 @@ nav .right {
 }
 
 .b2 .title{
-    color: #37333b;
+    color: #000;
     text-align: center;
     font-size: 5vh;
     margin-top: 7vh;;

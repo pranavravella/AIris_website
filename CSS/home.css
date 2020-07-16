@@ -27,7 +27,7 @@
 
 @font-face {
     font-family: "Metropolis";
-    src: url("fonts/Metropolis/Metropolis-Medium.otf");
+    src: url("fonts/Metropolis/Metropolis-Regular.otf");
 }
 
 @font-face {
@@ -56,13 +56,13 @@ a {
 }
 
 /*Nav*/
-nav, nav * {
-    transition: 0.3s ease;
+nav, nav .right{
+    transition: 0.3s;
 }
 
 nav {
-    font-size: 2.5vh;
-    height: 6vh;
+    font-size: calc(1vh + 0.65vw);
+    height: 7vh;
     font-family: 'Metropolis', "arial";
     box-shadow: none;
 }
@@ -74,7 +74,6 @@ nav a {
 nav span {
     padding-right: 2vh;
     padding-left: 2vh;
-    font-size: 2vh;
     transition: 0.3s;
 }
 

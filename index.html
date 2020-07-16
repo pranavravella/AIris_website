@@ -17,6 +17,9 @@
         <script src="JS/lib/three.min.js"></script>
         <script src="JS/Madeleine.js"></script> -->
         <script src="JS/home.js"></script>
+        <script src="JS/scroll.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js">
+        </script>
         <link rel="icon" href="Pics/copy.png">
         <title>Atheia</title>
 </head>
@@ -26,10 +29,10 @@
     <nav class="navbar fixed-top navbar-expand-xl">
         <div class="right">
             <a href="index.html#home"><span>Home</span></a>
-            <a href="b.html"><span>Features</span></a>
-            <a href="c.html"><span>C Team</span></a>
-            <a href="past.html"><span>Past</span></a>
-            <a href="resources.html"><span>Resources</span></a>
+            <a href="index.html#features"><span>Features</span></a>
+            <a href="index.html#home"><span>C Team</span></a>
+            <a href="index.html#home"><span>Past</span></a>
+            <a href="index.html#home"><span>Resources</span></a>
         </div>
     </nav>
 
@@ -46,6 +49,10 @@
     </div>
     <div class="b2">
     </div>
+    <div class="b2">
+    </div>
+    <div class="b2">
+    </div>
     <div class="foot-wrap">
         <footer></footer>
     </div>
@@ -58,7 +65,7 @@
             $("nav").css('box-shadow', 'none');
             $("nav .right").css('padding-top', '2vh');
             $("nav *").css('color', '#fff');
-            $("nav span:hover").css('color', '#06D6A0');
+            $("nav span:hover").css('color', '#000');
             $("nav img").attr("src", "Pics/copy3.png");
         } else {
             $("nav").css('background-color', '#fff');
@@ -75,6 +82,11 @@
             $("nav img").attr("src", "Pics/copy.png");
         }
     }, 20)
+
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        easing: 'easeInOutQuad',
+        speed: 500
+    });
 </script>
 
 </html>

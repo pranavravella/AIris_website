@@ -27,13 +27,12 @@
 
 @font-face {
     font-family: "Metropolis";
-    src: url("fonts/Metropolis/Metropolis-Bold.ttf");
-    font-weight: bold;
+    src: url("fonts/Metropolis/Metropolis-Regular.otf");
 }
 
 @font-face {
     font-family: "Metropolis";
-    src: url("fonts/Metropolis/Metropolis-Bold.ttf");
+    src: url("fonts/Metropolis/Metropolis-Bold.otf");
     font-weight: bold;
 }
 
@@ -47,23 +46,69 @@ body {
     padding: 0 !important;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 .row {
     margin: 0 !important;
     padding: 0 !important;
 }
 
+/*Nav*/
+nav * {
+    transition: 0.3s;
+}
+
+nav {
+    font-size: 2.5vh;
+    height: 6vh;
+    font-family: 'Metropolis', "arial";
+    transition: 0.3s;
+    box-shadow: none;
+}
+
+nav a {
+    color: #fff;
+}
+
+nav span {
+    padding-right: 2vh;
+    padding-left: 2vh;
+    font-size: 2vh;
+    transition: 0.3s;
+}
+
+nav span:hover {
+    color: #3D348B;
+}
+
+nav .right {
+    position: absolute;
+    right: 0;
+    margin: auto;
+    padding-top: 2vh;
+    padding-right: 2%;
+}
+
 /*b1*/
 .b1 {
-    min-height: 100vh;
-    padding-bottom: calc(2vh + 1vw);
     height: auto;
+    padding-bottom: calc(2vh + 1vw);
     width: 100%;
-    background: linear-gradient(to bottom right, #fff, #fff, #fff, #3bb5fc, #06D6A0);
+}
+
+.b1 .back {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: auto;
+    padding-bottom: calc(2vh + 1vw);
+    width: 100%;
 }
 
 .cad {
-    width: 100%;
-    min-width: 60vh;
+    width: 95%;
     margin-top: calc(4vh + 3vw);
     animation: bounce 2s infinite alternate;
 }
@@ -97,13 +142,15 @@ body {
     }
 }
 
-.b1.row {
+.b1 .col-6:last-child {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
-.b1 > div {
-    min-width: 60vh;
-    /* background: linear-gradient(to right, #fff, blue, #fff); */
+.b1.row {
+    justify-content: center;
 }
 
 .b1 .text {
@@ -111,10 +158,17 @@ body {
 }
 
 .b1 .title {
-    font-size: 7vh;
+    font-size: calc(4vh + 4vw);
     text-align: center;
-    padding-top: calc(4vh + 3vw);
-    font-family: "Metropolis";
+    font-family: "Lato";
+    color: #fff;
+}
+
+.b1 .label {
+    font-size: calc(1vh + 2vw);
+    text-align: center;
+    font-family: "Lato";
+    color: #fff;
 }
 
 .b2 {

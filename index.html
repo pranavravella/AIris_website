@@ -13,22 +13,33 @@
     <link1
         href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
         rel="stylesheet">
-        <script src="JS/lib/detector.js"></script>
+        <!-- <script src="JS/lib/detector.js"></script>
         <script src="JS/lib/three.min.js"></script>
-        <script src="JS/Madeleine.js"></script>
+        <script src="JS/Madeleine.js"></script> -->
         <script src="JS/home.js"></script>
         <link rel="icon" href="Pics/copy.png">
         <title>Atheia</title>
 </head>
 
 <body>
-    <div class="b1 row">
+
+    <nav class="navbar fixed-top navbar-expand-xl">
+        <div class="right">
+            <a href="index.html#home"><span>Home</span></a>
+            <a href="b.html"><span>Features</span></a>
+            <a href="c.html"><span>C Team</span></a>
+            <a href="resources.html"><span>Resources</span></a>
+        </div>
+    </nav>
+
+    <div class="b1 row" id="home">
+        <img src="Pics/back.png" class="back">
         <div class="col-6">
             <img src="Pics/cad3.png" class="cad">
             <div class="cad-shadow"></div>
         </div>
         <div class="col-6">
-            <p class="title">Atheia</p>
+            <p class="title">Atheia</p> <br>
             <p class="label">The Next-Gen Visual Aide</p>
         </div>
     </div>
@@ -38,5 +49,31 @@
         <footer></footer>
     </div>
 </body>
+
+<script>
+    setInterval(function () {
+        if ($(window).scrollTop() == 0) {
+            $("nav").css('background-color', 'transparent');
+            $("nav").css('box-shadow', 'none');
+            $("nav .right").css('padding-top', '2vh');
+            $("nav *").css('color', '#fff');
+            $("nav span:hover").css('color', '#06D6A0');
+            $("nav img").attr("src", "Pics/copy3.png");
+        } else {
+            $("nav").css('background-color', '#fff');
+            $("nav").css('box-shadow', `
+                0 2.8px 2.2px rgba(0, 0, 0, 0.014),
+                0 6.7px 5.3px rgba(0, 0, 0, 0.018),
+                0 1.5px 2px rgba(0, 0, 0, 0.02),
+                0 2.3px 2px rgba(0, 0, 0, 0.022),
+                0 3.8px 2px rgba(0, 0, 0, 0.026),
+                0 4px 5px rgba(0, 0, 0, 0.05)`);
+            $("nav .right").css('padding-top', '0vh');
+            $("nav *").css('color', '#1B98E0');
+            $("nav span:hover").css('color', '#06D6A0');
+            $("nav img").attr("src", "Pics/copy.png");
+        }
+    }, 20)
+</script>
 
 </html>

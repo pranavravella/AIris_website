@@ -44,6 +44,7 @@ body {
 body {
     margin: 0 !important;
     padding: 0 !important;
+    font-family: "Lato";
 }
 
 a {
@@ -56,7 +57,8 @@ a {
 }
 
 /*Nav*/
-nav, nav .right{
+nav,
+nav .right {
     transition: 0.3s;
 }
 
@@ -92,6 +94,8 @@ nav .right {
 /*b1*/
 .b1 {
     height: auto;
+    position: relative;
+    overflow: hidden;
     padding-bottom: calc(2vh + 1vw);
     width: 100%;
 }
@@ -169,7 +173,33 @@ nav .right {
     color: #fff;
 }
 
+.b1 button {
+    border: 0 !important;
+    border-radius: 0.5vh;
+    height: auto;
+    width: auto;
+    font-size: 2vh;
+    margin-top: 3vh;
+    background-color: #fff;
+    padding: 1vh 3vh;
+    color: #3bb5fc;
+    transition: 0.3s;
+    /* background: linear-gradient(to right, #2193b0, #6dd5ed, #3bb5fc, #06D6A0); */
+}
+
+.b1 button:hover {
+    transform: scale(1.05);
+}
+
+/*b2*/
 .b2 {
     height: 100vh;
     width: 100%;
+}
+
+.b2 .title{
+    color: #37333b;
+    text-align: center;
+    font-size: 5vh;
+    margin-top: 7vh;;
 }

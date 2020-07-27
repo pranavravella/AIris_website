@@ -280,6 +280,7 @@ nav .right {
 /*b3*/
 .b3 {
     padding-bottom: 9vh;
+    overflow-x: hidden;
 }
 
 .b3 .timeline-wrap {
@@ -293,6 +294,7 @@ nav .right {
     justify-content: center;
     align-items: center;
     padding-bottom: 0vh;
+    overflow-x: auto;
 }
 
 .b3 .timeline {
@@ -302,8 +304,14 @@ nav .right {
     top: 1.5vh;
     height: 21vh;
     margin: auto;
+    user-select: none;
 }
 
+.b3 .timeline:active{
+    cursor: grab;
+}
+
+.b3::-webkit-scrollbar,
 .b3 .timeline-wrap::-webkit-scrollbar,
 .b3 .timeline::-webkit-scrollbar {
     width: 0px;

@@ -118,7 +118,7 @@ nav .right {
 .b6 {
     height: auto;
     width: 100%;
-    background: #f8fbfd;
+    background: #f7fafd;
     padding-top: 7vh;
     padding-bottom: 5vh;
 }
@@ -153,6 +153,10 @@ nav .right {
     width: 100%;
 }
 
+.b1>div {
+    overflow: unset;
+}
+
 .b1 .back {
     position: absolute;
     right: 0;
@@ -163,7 +167,7 @@ nav .right {
 }
 
 .cad {
-    width: 80%;
+    width: 95%;
     margin-top: calc(4vh + 3vw);
     margin-left: 15%;
     animation: bounce 2s infinite alternate;
@@ -172,7 +176,7 @@ nav .right {
 .cad-shadow {
     background: radial-gradient(50% 50%, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
     width: 25%;
-    margin-left: 40%;
+    margin-left: 45%;
     margin-top: calc(3vh + 2vw);
     height: calc(2vh + 2vw);
     animation: shadow 2s infinite alternate;
@@ -446,11 +450,65 @@ nav .right {
     font-size: 2.2vh;
     border-bottom: #6d3dff solid 1px;
     display: inline-block;
+    color: #1B98E0;
 }
 
 .b4 .desc {
     color: #444;
     margin-top: 0.5vh;
+}
+
+/*b5*/
+.b5 .subtitle {
+    text-align: center;
+    font-size: 2.2vh;
+    color: #1B98E0;
+    width: 70%;
+    margin: auto;
+    margin-top: 0.7vh;
+}
+
+.b5 .row {
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+.b5 .row>div {
+    height: auto;
+    border-radius: 1vh;
+    margin: 2vh .8%;
+    min-width: 25vh;
+    width: 17%;
+    padding-bottom: 2vh;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.014),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.018),
+        0 1.5px 1px rgba(0, 0, 0, 0.02),
+        0 2.3px 7.9px rgba(0, 0, 0, 0.012),
+        0 5px 5px rgba(0, 0, 0, 0.016),
+        0 8px 8px rgba(0, 0, 0, 0.05);
+}
+
+.b5 .img-wrap {
+    height: 27vh;
+    overflow: hidden;
+}
+
+.b5 img {
+    width: 100%;
+}
+
+.b5 .label {
+    font-size: 2.5vh;
+    text-align: center;
+    margin-top: 1vh;
+}
+
+.b5 .desc {
+    text-align: center;
+    font-size: 1.8vh;
+    margin-top: 0.5vh;
+    color: #6d3dff;
 }
 
 /*footer*/

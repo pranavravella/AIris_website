@@ -9,7 +9,7 @@ function initialize() {
         }, 500);
     });
     
-    const slider = document.querySelector('.b3 ');
+    const slider = document.querySelector('.ourtimeline ');
     let isDown = false;
     let startX;
     let scrollLeft;
@@ -53,14 +53,14 @@ function initialize() {
             $("nav *").css('color', '#1B98E0');
             $("nav span:hover").css('color', '#06D6A0');
         }
-        var timewidth = $('.b3 .timeline > :last-child').offset().left - $('.b3 .timeline > :first-child')
+        var timewidth = $('.ourtimeline .timeline > :last-child').offset().left - $('.ourtimeline .timeline > :first-child')
             .offset()
-            .left + $('.b3 .timeline > :last-child').width();
-        var linewidth = timewidth - $('.b3 .timeline > :first-child').width() / 2 - $(
-            '.b3 .timeline > :last-child').width() / 2;
-        $(".b3 .timeline-wrap").width(timewidth + "px");
-        $(".b3 .timeline").width(timewidth + "px");
-        $(".b3 .line").width(linewidth + "px");
+            .left + $('.ourtimeline .timeline > :last-child').width();
+        var linewidth = timewidth - $('.ourtimeline .timeline > :first-child').width() / 2 - $(
+            '.ourtimeline .timeline > :last-child').width() / 2;
+        $(".ourtimeline .timeline-wrap").width(timewidth + "px");
+        $(".ourtimeline .timeline").width(timewidth + "px");
+        $(".ourtimeline .line").width(linewidth + "px");
     }, 20)
 }
 $(initialize)

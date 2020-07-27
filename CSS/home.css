@@ -121,8 +121,8 @@ nav .right {
 }
 
 /*Common Features*/
-.b2,
-.b4,
+.features,
+.faqs,
 .b6 {
     height: auto;
     width: 100%;
@@ -131,8 +131,8 @@ nav .right {
     padding-bottom: 5vh;
 }
 
-.b3,
-.b5 {
+.ourtimeline,
+.about {
     height: auto;
     width: 100%;
     background: #fff;
@@ -140,10 +140,10 @@ nav .right {
     padding-bottom: 7vh;
 }
 
-.b2 .title,
-.b3 .title,
-.b4 .title,
-.b5 .title,
+.features .title,
+.ourtimeline .title,
+.faqs .title,
+.about .title,
 .b6 .title {
     color: #000;
     text-align: center;
@@ -151,8 +151,8 @@ nav .right {
     font-family: 'Roboto';
 }
 
-/*b1*/
-.b1 {
+/*landing*/
+.landing {
     height: auto;
     min-height: 100vh;
     position: relative;
@@ -161,11 +161,11 @@ nav .right {
     width: 100%;
 }
 
-.b1>div {
+.landing>div {
     overflow: unset;
 }
 
-.b1 .back {
+.landing .back {
     position: absolute;
     right: 0;
     top: 0;
@@ -210,22 +210,22 @@ nav .right {
     }
 }
 
-.b1 .col-6:last-child {
+.landing .col-6:last-child {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.b1 .row {
+.landing .row {
     justify-content: center;
 }
 
-.b1 .text {
+.landing .text {
     width: 50%;
 }
 
-.b1 .title {
+.landing .title {
     font-size: calc(4vh + 4vw);
     text-align: center;
     font-family: "Lato";
@@ -233,7 +233,7 @@ nav .right {
     margin-top: -7vh;
 }
 
-.b1 .label {
+.landing .label {
     font-size: calc(1vh + 2vw);
     text-align: center;
     font-family: "Lato";
@@ -241,7 +241,7 @@ nav .right {
     margin-top: -4vh;
 }
 
-.b1 button {
+.landing button {
     border: 0 !important;
     border-radius: 0.5vh;
     height: auto;
@@ -256,34 +256,34 @@ nav .right {
     /* background: linear-gradient(to right, #2193b0, #6dd5ed, #3bb5fc, #06D6A0); */
 }
 
-.b1 button:hover {
+.landing button:hover {
     transform: scale(1.05);
 }
 
-/*b2*/
-.b2 .label {
+/*features*/
+.features .label {
     text-align: center;
     font-size: 2.5vh;
     margin-top: 1vh;
 }
 
-.b2 .desc {
+.features .desc {
     font-size: 1.8vh;
     margin-top: 1vh;
 }
 
-.b2 i {
+.features i {
     text-align: center;
     font-size: 9vh;
     width: 100%;
     margin-top: 2vh;
 }
 
-.b2 .row {
+.features .row {
     justify-content: center;
 }
 
-.b2 .row>div {
+.features .row>div {
     height: 25vh;
     border-radius: 1vh;
     margin: 2vh 2%;
@@ -291,19 +291,19 @@ nav .right {
     width: 13%;
 }
 
-/*b3 timeline*/
-.b3 {
+/*ourtimeline timeline*/
+.ourtimeline {
     padding-bottom: 9vh;
     overflow-x: hidden;
 }
 
-.b3 .title {
+.ourtimeline .title {
     position: absolute;
     left: 0;
     right: 0;
 }
 
-.b3 .timeline-wrap {
+.ourtimeline .timeline-wrap {
     height: 21vh;
     margin-top: 8vh;
     margin-left: auto;
@@ -317,7 +317,7 @@ nav .right {
     overflow-x: auto;
 }
 
-.b3 .timeline {
+.ourtimeline .timeline {
     white-space: nowrap;
     display: inline-block;
     position: absolute;
@@ -327,18 +327,18 @@ nav .right {
     user-select: none;
 }
 
-.b3:active {
+.ourtimeline:active {
     cursor: move;
 }
 
-.b3::-webkit-scrollbar,
-.b3 .timeline-wrap::-webkit-scrollbar,
-.b3 .timeline::-webkit-scrollbar {
+.ourtimeline::-webkit-scrollbar,
+.ourtimeline .timeline-wrap::-webkit-scrollbar,
+.ourtimeline .timeline::-webkit-scrollbar {
     width: 0px;
     height: 0px;
 }
 
-.b3 .line {
+.ourtimeline .line {
     width: calc(80% - 20vh);
     margin: auto;
     height: 1vh;
@@ -349,22 +349,22 @@ nav .right {
     transform: translateX(-1vh);
 }
 
-.b3 .timeline-wrap>i {
+.ourtimeline .timeline-wrap>i {
     font-size: 3vh;
     position: absolute;
     top: 11.2vh;
     cursor: pointer;
 }
 
-.b3 .fa-chevron-left {
+.ourtimeline .fa-chevron-left {
     left: 4vh;
 }
 
-.b3 .fa-chevron-right {
+.ourtimeline .fa-chevron-right {
     right: 4vh;
 }
 
-.b3 .event {
+.ourtimeline .event {
     display: inline-block;
     margin-left: 1.5%;
     margin-right: 1.5%;
@@ -374,15 +374,15 @@ nav .right {
     position: relative;
 }
 
-.b3 .timeline>:first-child {
+.ourtimeline .timeline>:first-child {
     margin-left: 0% !important;
 }
 
-.b3 .timeline>:last-child {
+.ourtimeline .timeline>:last-child {
     margin-right: 0% !important;
 }
 
-.b3 .dot {
+.ourtimeline .dot {
     width: 2vh;
     height: 2vh;
     background: #6d3dff;
@@ -395,15 +395,15 @@ nav .right {
     transform: translateX(0vh);
 }
 
-.b3 .top .dot {
+.ourtimeline .top .dot {
     top: 8vh;
 }
 
-.b3 .bottom .dot {
+.ourtimeline .bottom .dot {
     transform: translateY(2vh);
 }
 
-.b3 .label {
+.ourtimeline .label {
     color: #fff;
     font-size: 2.5vh;
     height: 6vh;
@@ -416,11 +416,11 @@ nav .right {
     font-family: 'Nunito';
 }
 
-.b3 .bottom .label {
+.ourtimeline .bottom .label {
     transform: translateY(12vh);
 }
 
-.b3 .date {
+.ourtimeline .date {
     color: #aaa;
     font-size: 2vh;
     height: 4vh;
@@ -431,43 +431,43 @@ nav .right {
     font-family: 'Nunito';
 }
 
-.b3 .top .date {
+.ourtimeline .top .date {
     transform: translateY(6vh);
 }
 
-.b3 .bottom .date {
+.ourtimeline .bottom .date {
     transform: translateY(-4vh);
 }
 
-/*b4 faq*/
-.b4 .row {
+/*faqs*/
+.faqs .row {
     justify-content: center;
     margin-top: 2vh;
     padding-left: 10%;
     padding-right: 10%;
 }
 
-.b4 .row>div {
+.faqs .row>div {
     height: auto;
     margin: 2vh 3%;
     min-width: 30vh;
     width: 24%;
 }
 
-.b4 .label {
+.faqs .label {
     font-size: 2.2vh;
     border-bottom: #6d3dff solid 1px;
     display: inline-block;
     color: #1B98E0;
 }
 
-.b4 .desc {
+.faqs .desc {
     color: #444;
     margin-top: 0.5vh;
 }
 
-/*b5*/
-.b5 .subtitle {
+/*about*/
+.about .subtitle {
     text-align: center;
     font-size: 2.2vh;
     color: #777;
@@ -476,12 +476,12 @@ nav .right {
     margin-top: 0.7vh;
 }
 
-.b5 .row {
+.about .row {
     justify-content: center;
     margin-top: 2vh;
 }
 
-.b5 .row>div {
+.about .row>div {
     height: auto;
     border-radius: 0.75vh;
     margin: 2vh .8%;
@@ -498,22 +498,22 @@ nav .right {
         0 8px 8px rgba(0, 0, 0, 0.05);
 }
 
-.b5 .img-wrap {
+.about .img-wrap {
     height: 27vh;
     overflow: hidden;
 }
 
-.b5 img {
+.about img {
     width: 100%;
 }
 
-.b5 .label {
+.about .label {
     font-size: 2.5vh;
     text-align: center;
     margin-top: 1vh;
 }
 
-.b5 .desc {
+.about .desc {
     text-align: center;
     font-size: 1.8vh;
     margin-top: 0.5vh;

@@ -220,13 +220,15 @@ nav .right {
     height: auto;
     width: 100%;
     background: #f8fbfd;
+    padding-top: 7vh;
+    padding-bottom: 5vh;
 }
 
-.b2 .title {
+.b2 .title,
+.b3 .title {
     color: #000;
     text-align: center;
     font-size: 5vh;
-    margin-top: 7vh;
     font-family: 'Roboto';
 }
 
@@ -254,7 +256,69 @@ nav .right {
 .b2 .row>div {
     height: 25vh;
     border-radius: 1vh;
-    margin: 2%;
+    margin: 2vh 2%;
     min-width: 25vh;
     width: 13%;
+}
+
+/*b3*/
+.b3 {
+    height: auto;
+    width: 100%;
+    background: #fff;
+    padding-top: 2vh;
+    padding-bottom: 20vh;
+}
+
+.b3 .timeline-wrap {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.3s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.b3 .timeline{
+    white-space: nowrap;
+    display: flex;
+    width: 90%;
+    display: inline-block;
+    overflow-x: hidden;
+}
+
+.b3 .line {
+    width: calc(100% - 20vh);
+    height: 1vh;
+    background-image: linear-gradient(to right, #06D6A0, #3bb5fc);
+    border-radius: 5vh;
+    position: absolute;
+    top: 2vh;
+}
+
+.b3 .timeline-wrap>i {
+    font-size: 3vh;
+    position: absolute;
+    top: 1.2vh;
+    cursor: pointer;
+}
+
+.b3 .fa-chevron-left{
+    left: 4vh;
+}
+
+.b3 .fa-chevron-right{
+    right: 4vh;
+}
+
+.b3 .event{
+    display: inline-block;
+    height: 40vh;
+    width: 25%;
+    margin-right: 3%;
+    background-color: #06D6A0;
+    margin-top: 8vh;
+    border-radius: 1vh;
 }

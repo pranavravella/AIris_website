@@ -297,13 +297,17 @@ nav .right {
 
 .b3 .timeline {
     white-space: nowrap;
-    width: calc(90% - 20vh);
     display: inline-block;
-    overflow-x: hidden;
     position: absolute;
     top: 1.5vh;
     height: 21vh;
     margin: auto;
+}
+
+.b3 .timeline-wrap::-webkit-scrollbar,
+.b3 .timeline::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
 }
 
 .b3 .line {
@@ -340,11 +344,11 @@ nav .right {
     position: relative;
 }
 
-.b3 .timeline>:first-child{
+.b3 .timeline>:first-child {
     margin-left: 0% !important;
 }
 
-.b3 .timeline>:last-child{
+.b3 .timeline>:last-child {
     margin-right: 0% !important;
 }
 

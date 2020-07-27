@@ -26,6 +26,17 @@
 }
 
 @font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto/Roboto-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto/Roboto-Light.ttf");
+}
+
+@font-face {
     font-family: "Metropolis";
     src: url("fonts/Metropolis/Metropolis-Regular.otf");
 }
@@ -45,6 +56,15 @@ body {
     margin: 0 !important;
     padding: 0 !important;
     font-family: "Lato";
+}
+
+body * {
+    overflow-y: hidden;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 a {
@@ -187,6 +207,7 @@ nav .right {
     padding: 1vh 3vh;
     color: #3bb5fc;
     transition: 0.3s;
+    outline: none !important;
     /* background: linear-gradient(to right, #2193b0, #6dd5ed, #3bb5fc, #06D6A0); */
 }
 
@@ -196,13 +217,44 @@ nav .right {
 
 /*b2*/
 .b2 {
-    height: 100vh;
+    height: auto;
     width: 100%;
+    background: #f8fbfd;
 }
 
-.b2 .title{
+.b2 .title {
     color: #000;
     text-align: center;
     font-size: 5vh;
-    margin-top: 7vh;;
+    margin-top: 7vh;
+    font-family: 'Roboto';
+}
+
+.b2 .label {
+    text-align: center;
+    font-size: 2.5vh;
+    margin-top: 1vh;
+}
+
+.b2 .desc {
+    font-size: 1.8vh;
+    margin-top: 1vh;
+}
+
+.b2 i {
+    text-align: center;
+    font-size: 9vh;
+    width: 100%;
+}
+
+.b2 .row {
+    justify-content: center;
+}
+
+.b2 .row>div {
+    height: 25vh;
+    border-radius: 1vh;
+    margin: 2%;
+    min-width: 25vh;
+    width: 13%;
 }

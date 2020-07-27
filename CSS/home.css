@@ -50,6 +50,7 @@
 html,
 body {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -307,7 +308,7 @@ nav .right {
     user-select: none;
 }
 
-.b3 .timeline:active{
+.b3:active{
     cursor: grab;
 }
 

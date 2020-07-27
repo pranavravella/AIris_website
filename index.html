@@ -10,7 +10,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
-    <link1
+    <link
         href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
         rel="stylesheet">
         <!-- <script src="JS/lib/detector.js"></script>
@@ -18,7 +18,6 @@
         <script src="JS/Madeleine.js"></script> -->
         <script src="JS/home.js"></script>
         <script src="JS/scroll.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js">
         </script>
         <link rel="icon" href="Pics/logo.png">
         <title>Atheia</title>
@@ -37,7 +36,7 @@
         </div>
     </nav>
 
-    <div class="b1 row" id="home">
+    <!-- <div class="b1 row" id="home">
         <img src="Pics/back2.png" class="back">
         <div class="col-6">
             <img src="Pics/cad4.png" class="cad">
@@ -48,7 +47,7 @@
             <p class="label">The Next-Gen Visual Aid</p>
             <button><a href="#features">Learn More</a></button>
         </div>
-    </div>
+    </div> -->
     <div class="b2" id="features">
         <p class="title">Innovative Features We Deliver</p>
         <div class="row">
@@ -127,47 +126,5 @@
         </footer>
     </div>
 </body>
-
-<script>
-    var scroll = new SmoothScroll('a[href*="#"]', {
-        easing: 'easeInOutQuad',
-        speed: 500
-    });
-
-    setInterval(() => {
-        var timewidth = $('.b3 .timeline > :last-child').offset().left - $('.b3 .timeline > :first-child')
-            .offset()
-            .left + $('.b3 .timeline > :last-child').width();
-        var linewidth = timewidth - $('.b3 .timeline > :first-child').width() / 2 - $(
-            '.b3 .timeline > :last-child').width() / 2;
-        $(".b3 .timeline-wrap").width(timewidth + "px");
-        $(".b3 .timeline").width(timewidth + "px");
-        $(".b3 .line").width(linewidth + "px");
-    }, 20);
-
-    const slider = document.querySelector('.b3 ');
-    let isDown = false;
-    let startX;
-    let scrollLeft;
-
-    slider.addEventListener('mousedown', (e) => {
-        isDown = true;
-        startX = e.pageX - slider.offsetLeft;
-        scrollLeft = slider.scrollLeft;
-    });
-    slider.addEventListener('mouseleave', () => {
-        isDown = false;
-    });
-    slider.addEventListener('mouseup', () => {
-        isDown = false;
-    });
-    slider.addEventListener('mousemove', (e) => {
-        if (!isDown) return;
-        e.preventDefault();
-        const x = e.pageX - slider.offsetLeft;
-        const walk = (x - startX) * 3; //scroll-fast
-        slider.scrollLeft = scrollLeft - walk;
-    });
-</script>
 
 </html>

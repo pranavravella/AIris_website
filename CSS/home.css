@@ -84,7 +84,7 @@ nav .right {
 
 nav {
     font-size: calc(1vh + 0.65vw);
-    height: 7vh;
+    height: calc(3vh + 2vw);
     font-family: 'Metropolis', "arial";
     box-shadow: none;
 }
@@ -105,10 +105,15 @@ nav span:hover {
 
 nav .right {
     position: absolute;
-    right: 0;
+    right: 5%;
     margin: auto;
     padding-top: 2vh;
     padding-right: 2%;
+}
+
+nav img {
+    height: calc(2vh + 2vw);
+    margin-left: 20%;
 }
 
 /*Common Features*/
@@ -162,15 +167,16 @@ nav .right {
 }
 
 .cad {
-    width: 95%;
+    width: 80%;
     margin-top: calc(4vh + 3vw);
+    margin-left: 15%;
     animation: bounce 2s infinite alternate;
 }
 
 .cad-shadow {
     background: radial-gradient(50% 50%, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
     width: 25%;
-    margin-left: 25%;
+    margin-left: 40%;
     margin-top: calc(3vh + 2vw);
     height: calc(2vh + 2vw);
     animation: shadow 2s infinite alternate;
@@ -307,7 +313,7 @@ nav .right {
     user-select: none;
 }
 
-.b3:active{
+.b3:active {
     cursor: grab;
 }
 

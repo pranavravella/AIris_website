@@ -328,7 +328,7 @@ nav .right {
 }
 
 .b3:active {
-    cursor: grab;
+    cursor: move;
 }
 
 .b3::-webkit-scrollbar,
@@ -449,7 +449,6 @@ nav .right {
 
 .b4 .row>div {
     height: auto;
-    border-radius: 1vh;
     margin: 2vh 3%;
     min-width: 30vh;
     width: 24%;
@@ -521,6 +520,9 @@ nav .right {
     color: #6d3dff;
 }
 
+/*b6 contact*/
+
+
 /*footer*/
 footer {
     height: 15vh;
@@ -528,6 +530,15 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+footer a {
+    color: #06D6A0;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #3bb5fc;
 }
 
 footer .copy {

@@ -262,6 +262,7 @@ nav .right {
     text-align: center;
     font-size: 9vh;
     width: 100%;
+    margin-top: 2vh;
 }
 
 .b2 .row {
@@ -278,7 +279,8 @@ nav .right {
 
 /*b3*/
 .b3 .timeline-wrap {
-    height: auto;
+    height: 25vh;
+    margin-top: 1vh;
     margin-left: auto;
     margin-right: auto;
     transition: 0.3s;
@@ -286,6 +288,7 @@ nav .right {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 0vh;
 }
 
 .b3 .timeline {
@@ -294,6 +297,9 @@ nav .right {
     width: calc(100% - 20vh);
     display: inline-block;
     overflow-x: hidden;
+    position: absolute;
+    top: 1vh;
+    height: 25vh;
 }
 
 .b3 .line {
@@ -302,13 +308,13 @@ nav .right {
     background-image: linear-gradient(to right, #06D6A0, #3bb5fc);
     border-radius: 5vh;
     position: absolute;
-    top: 2vh;
+    top: 11vh;
 }
 
 .b3 .timeline-wrap>i {
     font-size: 3vh;
     position: absolute;
-    top: 1.2vh;
+    top: 11.2vh;
     cursor: pointer;
 }
 
@@ -322,13 +328,50 @@ nav .right {
 
 .b3 .event {
     display: inline-block;
-    height: 40vh;
-    width: 22%;
-    min-width: 35vh;
     margin-right: 3%;
+    margin-top: 1vh;
+    width: auto;
+    height: 15vh;
+}
+
+.b3 .dot {
+    width: 2vh;
+    height: 2vh;
+    background-color: #000;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 10;
+}
+
+.b3 .top .dot {
+    top: 9.5vh;
+}
+
+.b3 .bottom .dot {
+    transform: translateY(-6vh);
+    position: relative;
+}
+
+.b3 .label {
+    color: #fff;
+    font-size: 3vh;
+    height: 6.5vh;
+    line-height: 6.5vh;
+    text-align: center;
+    height: 6.5vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
     background-color: #06D6A0;
-    margin-top: 8vh;
     border-radius: 1vh;
+    font-family: 'Nunito';
+}
+
+.b3 .bottom {
+    transform: translateY(8vh);
+}
+
+.b3 .bottom .label {
+    transform: translateY(5vh);
 }
 
 /*b4*/

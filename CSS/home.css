@@ -111,6 +111,37 @@ nav .right {
     padding-right: 2%;
 }
 
+/*Common Features*/
+.b2,
+.b4,
+.b6 {
+    height: auto;
+    width: 100%;
+    background: #f8fbfd;
+    padding-top: 7vh;
+    padding-bottom: 5vh;
+}
+
+.b3,
+.b5 {
+    height: auto;
+    width: 100%;
+    background: #fff;
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+}
+
+.b2 .title,
+.b3 .title,
+.b4 .title,
+.b5 .title,
+.b6 .title {
+    color: #000;
+    text-align: center;
+    font-size: 5vh;
+    font-family: 'Roboto';
+}
+
 /*b1*/
 .b1 {
     height: auto;
@@ -216,22 +247,6 @@ nav .right {
 }
 
 /*b2*/
-.b2 {
-    height: auto;
-    width: 100%;
-    background: #f8fbfd;
-    padding-top: 7vh;
-    padding-bottom: 5vh;
-}
-
-.b2 .title,
-.b3 .title {
-    color: #000;
-    text-align: center;
-    font-size: 5vh;
-    font-family: 'Roboto';
-}
-
 .b2 .label {
     text-align: center;
     font-size: 2.5vh;
@@ -262,14 +277,6 @@ nav .right {
 }
 
 /*b3*/
-.b3 {
-    height: auto;
-    width: 100%;
-    background: #fff;
-    padding-top: 2vh;
-    padding-bottom: 20vh;
-}
-
 .b3 .timeline-wrap {
     height: auto;
     margin-left: auto;
@@ -281,10 +288,10 @@ nav .right {
     align-items: center;
 }
 
-.b3 .timeline{
+.b3 .timeline {
     white-space: nowrap;
     display: flex;
-    width: 90%;
+    width: calc(100% - 20vh);
     display: inline-block;
     overflow-x: hidden;
 }
@@ -305,20 +312,30 @@ nav .right {
     cursor: pointer;
 }
 
-.b3 .fa-chevron-left{
+.b3 .fa-chevron-left {
     left: 4vh;
 }
 
-.b3 .fa-chevron-right{
+.b3 .fa-chevron-right {
     right: 4vh;
 }
 
-.b3 .event{
+.b3 .event {
     display: inline-block;
     height: 40vh;
-    width: 25%;
+    width: 22%;
+    min-width: 35vh;
     margin-right: 3%;
     background-color: #06D6A0;
     margin-top: 8vh;
     border-radius: 1vh;
+}
+
+/*b4*/
+.b4 {
+    height: auto;
+    width: 100%;
+    background: #f8fbfd;
+    padding-top: 7vh;
+    padding-bottom: 7vh;
 }

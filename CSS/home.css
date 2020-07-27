@@ -339,3 +339,19 @@ nav .right {
     padding-top: 7vh;
     padding-bottom: 7vh;
 }
+
+/*footer*/
+footer {
+    height: 15vh;
+    background-color: #282731;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .copy {
+    text-align: center;
+    color: #fff;
+    font-size: 1.8vh;
+    font-family: 'Roboto';
+}

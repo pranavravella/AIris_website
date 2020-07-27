@@ -71,6 +71,14 @@ a {
     text-decoration: none !important;
 }
 
+img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
 .row {
     margin-left: 0 !important;
     margin-right: 0 !important;
@@ -420,7 +428,6 @@ nav .right {
     text-align: center;
     padding-left: 2vh;
     padding-right: 2vh;
-    border-radius: 1vh;
     font-family: 'Nunito';
 }
 
@@ -475,9 +482,9 @@ nav .right {
 
 .b5 .row>div {
     height: auto;
-    border-radius: 1vh;
+    border-radius: 0.75vh;
     margin: 2vh .8%;
-    min-width: 25vh;
+    min-width: 32vh;
     width: 17%;
     padding-bottom: 2vh;
     box-shadow:

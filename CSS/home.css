@@ -72,7 +72,8 @@ a {
 }
 
 .row {
-    margin: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
     padding: 0 !important;
 }
 
@@ -428,12 +429,28 @@ nav .right {
 }
 
 /*b4*/
-.b4 {
+.b4 .row {
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+.b4 .row>div {
     height: auto;
-    width: 100%;
-    background: #f8fbfd;
-    padding-top: 7vh;
-    padding-bottom: 7vh;
+    border-radius: 1vh;
+    margin: 2vh 2%;
+    min-width: 25vh;
+    width: 20%;
+}
+
+.b4 .label {
+    font-size: 2.2vh;
+    border-bottom: #6d3dff solid 1px;
+    display: inline-block;
+}
+
+.b4 .desc {
+    color: #444;
+    margin-top: 0.5vh;
 }
 
 /*footer*/

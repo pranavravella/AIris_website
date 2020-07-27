@@ -312,11 +312,13 @@ nav .right {
 
 .b3 .line {
     width: calc(80% - 20vh);
+    margin: auto;
     height: 1vh;
     background-image: linear-gradient(to right, #06D6A0, #3bb5fc);
     border-radius: 5vh;
     position: absolute;
     top: 11vh;
+    transform: translateX(-1vh);
 }
 
 .b3 .timeline-wrap>i {
@@ -362,6 +364,7 @@ nav .right {
     left: 0;
     right: 0;
     margin: auto;
+    transform: translateX(0vh);
 }
 
 .b3 .top .dot {

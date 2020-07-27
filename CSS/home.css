@@ -111,11 +111,6 @@ nav .right {
     padding-right: 2%;
 }
 
-nav img {
-    height: calc(2vh + 2vw);
-    margin-left: 20%;
-}
-
 /*Common Features*/
 .b2,
 .b4,
@@ -289,9 +284,15 @@ nav img {
     overflow-x: hidden;
 }
 
+.b3 .title {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
 .b3 .timeline-wrap {
     height: 21vh;
-    margin-top: 1vh;
+    margin-top: 8vh;
     margin-left: auto;
     margin-right: auto;
     transition: 0.3s;

@@ -158,6 +158,9 @@ hr {
     overflow: hidden;
     padding-bottom: calc(2vh + 1vw);
     width: 100%;
+    background-image: url('../Pics/background2.jpg');
+    background-size: cover;
+    background-position: bottom;
 }
 
 .landing>div {
@@ -174,16 +177,16 @@ hr {
 }
 
 .cad {
-    width: 95%;
+    width: 90%;
     margin-top: calc(4vh + 3vw);
-    margin-left: 15%;
+    margin-left: 6%;
     animation: bounce 2s infinite alternate;
 }
 
 .cad-shadow {
     background: radial-gradient(50% 50%, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
     width: 25%;
-    margin-left: 45%;
+    margin-left: 40%;
     margin-top: calc(3vh + 2vw);
     height: calc(2vh + 2vw);
     animation: shadow 2s infinite alternate;
@@ -218,26 +221,31 @@ hr {
 
 .landing .row {
     justify-content: center;
+
 }
 
 .landing .text {
+    padding-left: 20%;
     width: 50%;
+    text-align: left !important;
 }
 
 .landing .title {
     font-size: calc(4vh + 4vw);
-    text-align: center;
+    text-align: left !important;
     font-family: "Lato";
     color: #fff;
-    margin-top: -7vh;
+    margin-top: 10vw;
+    padding-left: 8vw;
 }
 
 .landing .label {
-    font-size: calc(1vh + 2vw);
-    text-align: center;
+    font-size: calc(0.5vh + 2vw);
+    text-align: left;
     font-family: "Lato";
     color: #fff;
     margin-top: -4vh;
+    padding-left: 8vw;
 }
 
 .landing button {
@@ -246,10 +254,10 @@ hr {
     height: auto;
     width: auto;
     font-size: 2vh;
-    margin-top: 3vh;
-    background-color: #fff;
+    margin-top: 5vh;
+    margin-left: 8vw;
+    background-color: rgb(102, 143, 255);
     padding: 1vh 3vh;
-    color: #3bb5fc;
     transition: 0.3s;
     outline: none !important;
     /* background: linear-gradient(to right, #2193b0, #6dd5ed, #3bb5fc, #06D6A0); */
@@ -259,7 +267,16 @@ hr {
     transform: scale(1.05);
 }
 
+.landing a{
+    color: #ffffff !important;
+}
+
 /*features*/
+.features{
+    top:5vh;
+    position: relative;
+    padding-top: 0;
+}
 .features .label {
     text-align: center;
     font-size: 2.5vh;
@@ -280,12 +297,14 @@ hr {
 
 .features .row {
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .features .row>div {
     height: 25vh;
+    margin: 2% 2vh;
     border-radius: 1vh;
-    margin: 2vh 2%;
     min-width: 25vh;
     width: 13%;
 }
@@ -367,8 +386,10 @@ hr {
 
 /*highlight*/
 .highlight {
-    padding-top: 3vh;
-    padding-bottom: 3vh;
+    /* padding-top: 3vh;
+    padding-bottom: 3vh; */
+    margin:0;
+    padding: 0;
 }
 
 .highlight .row>div {
@@ -394,6 +415,7 @@ hr {
 
 .highlight img {
     width: 100%;
+    height: 100%;
 }
 
 .highlight .label {

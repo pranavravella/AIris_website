@@ -161,6 +161,7 @@ hr {
     background-image: url('../Pics/background2.jpg');
     background-size: cover;
     background-position: bottom;
+    background-repeat: no-repeat;
 }
 
 .landing>div {
@@ -177,16 +178,16 @@ hr {
 }
 
 .cad {
-    width: 90%;
-    margin-top: calc(4vh + 3vw);
-    margin-left: 6%;
+    width: 95%;
+    margin-top: calc(7vh + 3vw);
+    margin-right: 15%;
     animation: bounce 2s infinite alternate;
 }
 
 .cad-shadow {
-    background: radial-gradient(50% 50%, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+    background: radial-gradient(50% 50%, rgba(0, 0, 0, 0.25) 0%, transparent 100%);
     width: 25%;
-    margin-left: 40%;
+    margin-left: 25%;
     margin-top: calc(3vh + 2vw);
     height: calc(2vh + 2vw);
     animation: shadow 2s infinite alternate;
@@ -221,31 +222,28 @@ hr {
 
 .landing .row {
     justify-content: center;
-
 }
 
 .landing .text {
-    padding-left: 20%;
     width: 50%;
-    text-align: left !important;
 }
 
 .landing .title {
     font-size: calc(4vh + 4vw);
-    text-align: left !important;
+    text-align: left;
     font-family: "Lato";
     color: #fff;
-    margin-top: 10vw;
-    padding-left: 8vw;
+    margin-top: calc(10vh + 9vw);
+    padding-left: calc(10vh + 5vw);
 }
 
 .landing .label {
-    font-size: calc(0.5vh + 2vw);
+    font-size: calc(1vh + 2vw);
     text-align: left;
     font-family: "Lato";
     color: #fff;
     margin-top: -4vh;
-    padding-left: 8vw;
+    padding-left: calc(10vh + 5vw);
 }
 
 .landing button {
@@ -254,29 +252,24 @@ hr {
     height: auto;
     width: auto;
     font-size: 2vh;
-    margin-top: 5vh;
-    margin-left: 8vw;
-    background-color: rgb(102, 143, 255);
+    margin-top: 3vh;
+    margin-left: calc(10vh + 5vw);
+    background-color: #6d3dff;
     padding: 1vh 3vh;
     transition: 0.3s;
     outline: none !important;
     /* background: linear-gradient(to right, #2193b0, #6dd5ed, #3bb5fc, #06D6A0); */
 }
 
+.landing button a {
+    color: #fff !important;
+}
+
 .landing button:hover {
     transform: scale(1.05);
 }
 
-.landing a{
-    color: #ffffff !important;
-}
-
 /*features*/
-.features{
-    top:5vh;
-    position: relative;
-    padding-top: 0;
-}
 .features .label {
     text-align: center;
     font-size: 2.5vh;
@@ -297,14 +290,12 @@ hr {
 
 .features .row {
     justify-content: center;
-    margin: 0;
-    padding: 0;
 }
 
 .features .row>div {
     height: 25vh;
-    margin: 2% 2vh;
     border-radius: 1vh;
+    margin: 2vh 2%;
     min-width: 25vh;
     width: 13%;
 }
@@ -386,15 +377,12 @@ hr {
 
 /*highlight*/
 .highlight {
-    /* padding-top: 3vh;
-    padding-bottom: 3vh; */
-    margin:0;
-    padding: 0;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 .highlight .row>div {
     padding: 0 !important;
-    background-color: rgb(240, 251, 255);
 }
 
 .highlight .text {
@@ -416,7 +404,6 @@ hr {
 
 .highlight img {
     width: 100%;
-    height: 100%;
 }
 
 .highlight .label {
@@ -439,7 +426,6 @@ hr {
 .ourtimeline {
     padding-bottom: 9vh;
     overflow-x: auto;
-    background-image: linear-gradient(to right, rgb(239, 248, 253), rgb(243, 241, 255));
 }
 
 .ourtimeline .title {
@@ -583,7 +569,7 @@ hr {
     font-family: 'Roboto';
 }
 
-.funding .label{
+.funding .label {
     font-size: 2vh;
     text-align: center;
     width: 40%;

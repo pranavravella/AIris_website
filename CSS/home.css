@@ -297,6 +297,12 @@ hr {
 }
 
 /*product*/
+.product {
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    overflow: hidden;
+}
+
 .product img {
     width: 40%;
     min-width: 60vh;
@@ -307,7 +313,9 @@ hr {
 
 .product .left,
 .product .right {
-    width: 30%;
+    flex: 1 1;
+    min-width: 45vh;
+    max-width: 70vh;
     display: flex;
     align-items: center;
     align-content: center;
@@ -549,10 +557,10 @@ hr {
 .about .row>div {
     height: auto;
     border-radius: 0.75vh;
-    margin: 2vh .8%;
-    min-width: 32vh;
-    max-width: 40vh;
-    width: 17%;
+    margin: 2vh 1.25%;
+    min-width: 30vh;
+    max-width: 37vh;
+    width: 16%;
     padding-bottom: 2vh;
     box-shadow:
         0 2.8px 2.2px rgba(0, 0, 0, 0.014),

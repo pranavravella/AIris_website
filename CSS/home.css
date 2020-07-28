@@ -128,7 +128,8 @@ hr {
 /*Common Features*/
 .features,
 .ourtimeline,
-.about {
+.about,
+.highlight {
     height: auto;
     width: 100%;
     /* background: #f7fafd; */
@@ -376,7 +377,7 @@ hr {
     padding: 0 !important;
 }
 
-.highlight .text{
+.highlight .text {
     display: flex;
     align-items: center;
     align-content: center;

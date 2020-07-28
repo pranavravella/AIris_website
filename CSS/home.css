@@ -341,6 +341,7 @@ hr {
 
 .product .label {
     font-size: 2.2vh;
+    color: #1B98E0;
 }
 
 .product .desc {
@@ -366,8 +367,7 @@ hr {
 }
 
 .product i {
-    /* position: absolute; */
-    /* left: 2%; */
+    color: #6d3dff;
     font-size: 6vh;
 }
 
@@ -403,6 +403,7 @@ hr {
     width: 80%;
     margin: auto;
     font-family: 'Roboto';
+    color: #06D6A0;
 }
 
 .highlight .desc {

@@ -266,7 +266,7 @@ hr {
 }
 
 .cad {
-    width: 95%;
+    width: 90%;
     margin-top: calc(7vh + 3vw);
     margin-right: 15%;
     animation: bounce 2s infinite alternate;
@@ -275,8 +275,8 @@ hr {
 .cad-shadow {
     background: radial-gradient(50% 50%, rgba(0, 0, 0, 0.25) 0%, transparent 100%);
     width: 25%;
-    margin-left: 40%;
-    margin-top: calc(3vh + 3vw);
+    margin-left: 15%;
+    margin-top: calc(2vh + 2vw);
     height: calc(2vh + 2vw);
     animation: shadow 2s infinite alternate;
 }
@@ -301,7 +301,16 @@ hr {
     }
 }
 
-.landing .col-6:last-child {
+.landing>:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-flow: wrap;
+    align-content: center;
+    min-height: 30vh;
+}
+
+.landing>:last-child {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -310,6 +319,7 @@ hr {
 
 .landing .row {
     justify-content: center;
+    align-items: center;
 }
 
 .landing .text {
@@ -321,7 +331,6 @@ hr {
     text-align: left;
     font-family: "Lato";
     color: #fff;
-    margin-top: calc(10vh + 9vw);
     padding-left: calc(10vh + 5vw);
 }
 
@@ -330,7 +339,7 @@ hr {
     text-align: left;
     font-family: "Lato";
     color: #fff;
-    margin-top: -4vh;
+    margin-top: -2vh;
     padding-left: calc(10vh + 5vw);
 }
 
@@ -340,7 +349,7 @@ hr {
     height: auto;
     width: auto;
     font-size: 2vh;
-    margin-top: 3vh;
+    margin-top: 2vh;
     margin-left: calc(10vh + 5vw);
     background-color: #6d3dff;
     padding: 1vh 3vh;
@@ -501,14 +510,14 @@ hr {
     width: 80%;
     margin: auto;
     font-family: 'Roboto';
-    /* color: #06D6A0; */
+    /* color: #6d3dff !important; */
 }
 
 .highlight .desc {
     font-size: 1.9vh;
     width: 80%;
     margin: auto;
-    color: #fff;
+    color: #fff !important;
 }
 
 /*ourtimeline*/

@@ -128,19 +128,12 @@ hr {
 /*Common Features*/
 .features,
 .ourtimeline,
-.about{
-    height: auto;
-    width: 100%;
-    /* background: #f7fafd; */
-    padding-top: 7vh;
-    padding-bottom: 5vh;
-}
-
+.about,
 .product,
+.funding,
 .faqs {
     height: auto;
     width: 100%;
-    /* background: #fff; */
     padding-top: 7vh;
     padding-bottom: 7vh;
 }
@@ -149,7 +142,8 @@ hr {
 .ourtimeline .title,
 .faqs .title,
 .about .title,
-.product .title {
+.product .title,
+.funding .title {
     color: #000;
     text-align: center;
     font-size: 5vh;
@@ -372,6 +366,11 @@ hr {
 }
 
 /*highlight*/
+.highlight {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
 .highlight .row>div {
     padding: 0 !important;
 }
@@ -560,6 +559,23 @@ hr {
 
 .ourtimeline .bottom .date {
     transform: translateY(-4vh);
+}
+
+/*funding*/
+.funding .subtitle {
+    text-align: center;
+    color: #1B98E0;
+    font-size: 4vh;
+    font-family: 'Roboto';
+}
+
+.funding .row {
+    justify-content: center;
+}
+
+.funding img {
+    height: 10vh;
+    margin: 2vh 3%;
 }
 
 /*faqs*/

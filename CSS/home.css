@@ -394,6 +394,7 @@ hr {
 
 .highlight .row>div {
     padding: 0 !important;
+    background-color: whitesmoke;
 }
 
 .highlight .text {

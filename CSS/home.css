@@ -120,22 +120,27 @@ nav .right {
     padding-right: 2%;
 }
 
-/*Common Features*/
-.features,
-.faqs,
-.b6 {
-    height: auto;
-    width: 100%;
-    background: #f7fafd;
-    padding-top: 7vh;
-    padding-bottom: 5vh;
+hr {
+    width: 80%;
+    margin: auto;
 }
 
+/*Common Features*/
+.features,
 .ourtimeline,
 .about {
     height: auto;
     width: 100%;
-    background: #fff;
+    /* background: #f7fafd; */
+    padding-top: 7vh;
+    padding-bottom: 5vh;
+}
+
+.product,
+.faqs {
+    height: auto;
+    width: 100%;
+    /* background: #fff; */
     padding-top: 7vh;
     padding-bottom: 7vh;
 }
@@ -144,7 +149,7 @@ nav .right {
 .ourtimeline .title,
 .faqs .title,
 .about .title,
-.b6 .title {
+.product .title {
     color: #000;
     text-align: center;
     font-size: 5vh;
@@ -291,7 +296,67 @@ nav .right {
     width: 13%;
 }
 
-/*ourtimeline timeline*/
+/*product*/
+.product img {
+    width: 40%;
+    min-width: 60vh;
+    max-width: 80vh;
+    margin: auto;
+    display: block;
+}
+
+.product .left,
+.product .right {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-flow: wrap;
+}
+
+.product .feature {
+    width: 100%;
+    padding-left: 30%;
+    padding-right: 5%;
+    display: inline-block;
+    position: relative;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.product .label {
+    font-size: 2.2vh;
+}
+
+.product .desc {
+    font-size: 1.5vh;
+}
+
+.product .icon-wrap {
+    position: absolute;
+    right: 75%;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.product .right .icon-wrap {
+    left: 7%;
+}
+
+.product .right .feature {
+    padding-left: 20%;
+    padding-right: 17%;
+}
+
+.product i {
+    /* position: absolute; */
+    /* left: 2%; */
+    font-size: 6vh;
+}
+
+/*ourtimeline*/
 .ourtimeline {
     padding-bottom: 9vh;
     overflow-x: hidden;

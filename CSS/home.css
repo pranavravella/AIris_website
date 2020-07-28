@@ -304,8 +304,8 @@ hr {
 }
 
 .product img {
-    width: 40%;
-    min-width: 60vh;
+    width: 30%;
+    min-width: 55vh;
     max-width: 80vh;
     margin: auto;
     display: block;

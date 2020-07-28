@@ -33,6 +33,8 @@ function initialize() {
         slider.scrollLeft = scrollLeft - walk;
     });
 
+    var marginleft = 0;
+
     setInterval(function () {
         if ($(window).scrollTop() == 0) {
             $("nav").css('background-color', 'transparent');
@@ -55,12 +57,14 @@ function initialize() {
         }
         var timewidth = $('.ourtimeline .timeline > :last-child').offset().left - $('.ourtimeline .timeline > :first-child')
             .offset()
-            .left + $('.ourtimeline .timeline > :last-child').width();
+            .left + $('.ourtimeline .timeline > :last-child').width() + 0.03 * $(window).width();
         var linewidth = timewidth - $('.ourtimeline .timeline > :first-child').width() / 2 - $(
-            '.ourtimeline .timeline > :last-child').width() / 2;
+            '.ourtimeline .timeline > :last-child').width() / 2 - 0.03 * $(window).width();
         $(".ourtimeline .timeline-wrap").width(timewidth + "px");
         $(".ourtimeline .timeline").width(timewidth + "px");
         $(".ourtimeline .line").width(linewidth + "px");
+        marginleft += parseInt($(".ourtimeline .line").offset().left - $('.ourtimeline .timeline > :first-child .dot').offset().left - 0.01 * $(window).height());
+        $(".ourtimeline .line").css("transform", "translateX(" + (-1 * marginleft) + "px)")
     }, 20)
 }
 $(initialize)

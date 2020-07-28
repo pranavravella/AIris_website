@@ -298,9 +298,16 @@ hr {
 
 /*product*/
 .product {
-    padding-top: 4vh;
-    padding-bottom: 4vh;
+    padding-top: 15vh;
     overflow: hidden;
+    position: relative;
+}
+
+.product .title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 4vh;
 }
 
 .product img {
@@ -362,6 +369,47 @@ hr {
     /* position: absolute; */
     /* left: 2%; */
     font-size: 6vh;
+}
+
+/*highlight*/
+.highlight .row>div {
+    padding: 0 !important;
+}
+
+.highlight .text{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-flow: wrap;
+}
+
+.highlight .img-wrap {
+    height: 40vh;
+    width: auto;
+    margin: auto;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.highlight img {
+    width: 100%;
+}
+
+.highlight .label {
+    font-size: 4.5vh;
+    text-align: left;
+    width: 80%;
+    margin: auto;
+    font-family: 'Roboto';
+}
+
+.highlight .desc {
+    font-size: 1.8vh;
+    width: 80%;
+    margin: auto;
+    margin-top: 1vh;
 }
 
 /*ourtimeline*/
@@ -537,6 +585,7 @@ hr {
 .faqs .desc {
     color: #444;
     margin-top: 0.5vh;
+    font-size: 1.6vh;
 }
 
 /*about*/

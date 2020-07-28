@@ -478,6 +478,7 @@ hr {
     align-items: center;
     align-content: center;
     flex-flow: wrap;
+    /* background-color: #879199 !important; */
 }
 
 .highlight .img-wrap {
@@ -500,14 +501,14 @@ hr {
     width: 80%;
     margin: auto;
     font-family: 'Roboto';
-    color: #06D6A0;
+    /* color: #06D6A0; */
 }
 
 .highlight .desc {
-    font-size: 1.8vh;
+    font-size: 1.9vh;
     width: 80%;
     margin: auto;
-    margin-top: 1vh;
+    color: #fff;
 }
 
 /*ourtimeline*/
@@ -650,6 +651,10 @@ hr {
 }
 
 /*funding*/
+.funding {
+    padding-top: 3vh;
+}
+
 .funding .subtitle {
     text-align: center;
     color: #1B98E0;

@@ -394,7 +394,7 @@ hr {
 
 .highlight .row>div {
     padding: 0 !important;
-    background-color: whitesmoke;
+    background-color: rgb(240, 251, 255);
 }
 
 .highlight .text {
@@ -439,6 +439,7 @@ hr {
 .ourtimeline {
     padding-bottom: 9vh;
     overflow-x: auto;
+    background-image: linear-gradient(to right, rgb(239, 248, 253), rgb(243, 241, 255));
 }
 
 .ourtimeline .title {

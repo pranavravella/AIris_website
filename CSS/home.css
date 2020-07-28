@@ -487,6 +487,7 @@ hr {
     align-items: center;
     align-content: center;
     flex-flow: wrap;
+    min-height: 40vh;
     /* background-color: #879199 !important; */
 }
 
@@ -502,6 +503,7 @@ hr {
 
 .highlight img {
     width: 100%;
+    min-height: 40vh;
 }
 
 .highlight .label {

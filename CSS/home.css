@@ -275,8 +275,8 @@ hr {
 .cad-shadow {
     background: radial-gradient(50% 50%, rgba(0, 0, 0, 0.25) 0%, transparent 100%);
     width: 25%;
-    margin-left: 25%;
-    margin-top: calc(3vh + 2vw);
+    margin-left: 40%;
+    margin-top: calc(3vh + 3vw);
     height: calc(2vh + 2vw);
     animation: shadow 2s infinite alternate;
 }

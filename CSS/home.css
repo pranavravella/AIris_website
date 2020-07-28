@@ -569,6 +569,13 @@ hr {
     font-family: 'Roboto';
 }
 
+.funding .label{
+    font-size: 2vh;
+    text-align: center;
+    width: 40%;
+    margin: 1vh auto;
+}
+
 .funding .row {
     justify-content: center;
 }

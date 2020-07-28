@@ -128,8 +128,7 @@ hr {
 /*Common Features*/
 .features,
 .ourtimeline,
-.about,
-.highlight {
+.about{
     height: auto;
     width: 100%;
     /* background: #f7fafd; */
@@ -417,7 +416,7 @@ hr {
 /*ourtimeline*/
 .ourtimeline {
     padding-bottom: 9vh;
-    overflow-x: hidden;
+    overflow-x: auto;
 }
 
 .ourtimeline .title {
@@ -437,7 +436,7 @@ hr {
     justify-content: center;
     align-items: center;
     padding-bottom: 0vh;
-    overflow-x: auto;
+    overflow-x: hide;
 }
 
 .ourtimeline .timeline {
@@ -448,6 +447,7 @@ hr {
     height: 21vh;
     margin: auto;
     user-select: none;
+    overflow-x: hide;
 }
 
 .ourtimeline:active {

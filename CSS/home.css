@@ -332,6 +332,7 @@ hr {
     font-family: "Lato";
     color: #fff;
     padding-left: calc(10vh + 5vw);
+    margin-top: -8vh;
 }
 
 .landing .label {
@@ -349,20 +350,20 @@ hr {
     height: auto;
     width: auto;
     font-size: 2vh;
-    margin-top: 2vh;
-    margin-left: calc(10vh + 5vw);
     background-color: #6d3dff;
     padding: 1vh 3vh;
-    transition: 0.3s;
     outline: none !important;
-    /* background: linear-gradient(to right, #2193b0, #6dd5ed, #3bb5fc, #06D6A0); */
-}
-
-.landing button a {
     color: #fff !important;
 }
 
-.landing button:hover {
+.landing a {
+    overflow: hidden;
+    margin-top: 2vh;
+    margin-left: calc(10vh + 5vw);
+    transition: 0.3s;
+}
+
+.landing a:hover {
     transform: scale(1.05);
 }
 

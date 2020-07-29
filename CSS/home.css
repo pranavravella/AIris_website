@@ -539,7 +539,7 @@ hr {
 /*demo*/
 .demo {
     padding-top: 14vh;
-    padding-bottom: 8vh;
+    padding-bottom: 7vh;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -602,7 +602,7 @@ hr {
 
 /*ourtimeline*/
 .ourtimeline {
-    padding-bottom: 13vh;
+    padding-bottom: 14vh;
     overflow-x: auto;
 }
 
@@ -740,9 +740,7 @@ hr {
 }
 
 /*funding*/
-.funding {
-    padding-top: 3vh;
-}
+.funding {}
 
 .funding .subtitle {
     text-align: center;

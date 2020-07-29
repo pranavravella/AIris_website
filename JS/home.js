@@ -103,12 +103,8 @@ function initialize() {
 
     $(".demo i").on("click touchstart", function (e) {
         var type = $(this).attr('name');
-        $(".demo i").each(function () {
-            $(this).removeClass("active");
-            $(".demo img").each(function () {
-                $(this).hide();
-            })
-        })
+        $(".demo i").removeClass("active");
+        $(".demo img").hide();
         $(".demo img[name='" + type + "']").show();
         $(this).addClass("active");
     })

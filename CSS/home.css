@@ -567,17 +567,30 @@ hr {
     width: 40%;
     min-width: 75vh;
     max-width: 90vh;
-    background-color: #000;
+    background-color: rgb(255, 255, 255);
     height: 50vh;
     overflow: hidden;
     border-radius: 1vh;
+    display: grid;
 }
 
 .demo img {
     width: 100%;
     min-height: 50vh;
     margin: auto;
-    display: block;
+    grid-column: 1;
+    grid-row: 1;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.remove{
+    opacity:0;
+}
+.shown{
+    opacity: 1 !important;
 }
 
 .demo .left,
@@ -596,19 +609,38 @@ hr {
     display: inline-block;
     position: relative;
     margin: 2vh auto;
-    background-color: #3bb5fc;
     padding: 1vh 2vh;
     border-radius: 0.5vh;
 }
 
 .demo .label {
     font-size: 2.5vh;
-    color: #000;
+    color: #1B98E0;
+    display: inline-block;
+}
+
+.demo i{
+    text-align: top;
+    font-size: 3.5vh;
+    display: inline-block;
+    margin: 2vh 1vh 0 1vh;
+    cursor: pointer;
+    background: linear-gradient(to bottom right, #06D6A0, #3bb5fc, #6d3dff);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.2s ease;
+}
+
+.demo i:hover{
+    transform: scale(1.1);
 }
 
 .demo .desc {
     font-size: 1.7vh;
-    color: #fff;
+    color: rgb(0, 0, 0);
+    transition: 0.2s ease;
 }
 
 /*ourtimeline*/

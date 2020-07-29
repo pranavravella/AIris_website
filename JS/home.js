@@ -101,12 +101,17 @@ function initialize() {
         $(this)[0].click();
     });
 
-    $(".demo i").on("click touchstart", function (e) {
+    $(".demo i").on("click", function (e) {
         var type = $(this).attr('name');
-        $(".demo i").removeClass("active");
         $(".demo img").hide();
-        $(".demo img[name='" + type + "']").show();
-        $(this).addClass("active");
+        if ($(this).hasClass("active")) {
+            $(".demo img[name='base']").show();
+            $(this).removeClass("active");
+        } else {
+            $(".demo i").removeClass("active");
+            $(".demo img[name='" + type + "']").show();
+            $(this).addClass("active");
+        }
     })
 
 }

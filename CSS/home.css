@@ -387,6 +387,7 @@ hr {
     text-align: center;
     font-size: 2.5vh;
     margin-top: 1vh;
+    color: #3bb5fc;
 }
 
 .features .desc {
@@ -399,6 +400,11 @@ hr {
     font-size: 9vh;
     width: 100%;
     margin-top: 2vh;
+    background: linear-gradient(to bottom right, #06D6A0, #3bb5fc, #6d3dff);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .features .row {
@@ -415,7 +421,8 @@ hr {
 
 /*product*/
 .product {
-    padding-top: 15vh;
+    padding-top: 9vh;
+    padding-bottom: 4vh;
     overflow: hidden;
     position: relative;
 }

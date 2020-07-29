@@ -602,7 +602,7 @@ hr {
     width: 80%;
     display: inline-block;
     position: relative;
-    margin: 0.5vh auto;
+    margin: 1vh auto;
     padding: 1vh 2vh;
     border-radius: 0.5vh;
 }
@@ -623,15 +623,15 @@ hr {
     text-align: top;
     font-size: 3.3vh;
     display: inline-block;
-    margin: 2vh 1vh 0 1vh;
     cursor: pointer;
     color: #1B98E0;
     transition: 0.2s ease;
-    transform: translateY(-2px);
+    margin-left: 1vh;
+    transform: translateY(-0.25vh);
 }
 
 .demo .active {
-    transform: translateY(-2px) rotateZ(45deg);
+    transform: translateY(-0.25vh) rotateZ(45deg);
     color: #6d3dff;
 }
 

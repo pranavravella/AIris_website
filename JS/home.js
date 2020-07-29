@@ -100,5 +100,10 @@ function initialize() {
     $('*').on('touchend', function () {
         $(this)[0].click();
     });
+
+    $(".demo i").on("click touchstart", function (e) {
+        $(this).parent().children('.desc').toggleClass('shown');
+    })
+
 }
 $(initialize)

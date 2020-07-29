@@ -603,13 +603,37 @@ hr {
 .demo .label {
     font-size: 2.5vh;
     color: #1B98E0;
+    display: inline-block;
+}
+
+.demo i{
+    text-align: top;
+    font-size: 3.5vh;
+    display: inline-block;
+    margin: 2vh 1vh 0 1vh;
+    cursor: pointer;
+    background: linear-gradient(to bottom right, #06D6A0, #3bb5fc, #6d3dff);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.2s ease;
+}
+
+.demo i:hover{
+    transform: scale(1.1);
 }
 
 .demo .desc {
     font-size: 1.7vh;
     color: rgb(0, 0, 0);
+    transition: 0.2s ease;
+    opacity: 0;
 }
 
+.shown{
+    opacity: 1 !important;
+}
 
 /*ourtimeline*/
 .ourtimeline {

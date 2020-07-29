@@ -87,6 +87,7 @@ img {
 
 /*Nav*/
 nav,
+nav .left,
 nav .right {
     transition: 0.3s;
 }
@@ -110,6 +111,18 @@ nav span {
 
 nav span:hover {
     color: #3D348B;
+}
+
+nav .left {
+    position: absolute;
+    left: 5%;
+    margin: auto;
+    padding-top: 2h;
+    padding-left: 2%;
+}
+
+nav .left img {
+    height: calc(2vh + 2vw);
 }
 
 nav .right {
@@ -213,13 +226,14 @@ hr {
     border-radius: 0 !important;
 }
 
-/*Common Features*/
+/*Common Settings*/
 .features,
 .ourtimeline,
 .about,
 .product,
 .funding,
-.faqs {
+.faqs,
+.demo {
     height: auto;
     width: 100%;
     padding-top: 7vh;
@@ -231,6 +245,7 @@ hr {
 .faqs .title,
 .about .title,
 .product .title,
+.demo .title,
 .funding .title {
     color: #000;
     text-align: center;
@@ -433,8 +448,8 @@ hr {
 
 .product .feature {
     width: 100%;
-    padding-left: 30%;
-    padding-right: 5%;
+    padding-left: 25%;
+    padding-right: 10%;
     display: inline-block;
     position: relative;
     margin-top: 3vh;
@@ -452,20 +467,11 @@ hr {
 
 .product .icon-wrap {
     position: absolute;
-    right: 75%;
+    right: 80%;
     top: 0;
     bottom: 0;
     display: flex;
     align-items: center;
-}
-
-.product .right .icon-wrap {
-    left: 7%;
-}
-
-.product .right .feature {
-    padding-left: 20%;
-    padding-right: 17%;
 }
 
 .product i {
@@ -521,6 +527,70 @@ hr {
     width: 80%;
     margin: auto;
     color: #fff !important;
+}
+
+/*demo*/
+.demo {
+    padding-top: 12vh;
+    padding-bottom: 10vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.demo .title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 2vh;
+}
+
+.demo .img-wrap {
+    width: 40%;
+    min-width: 75vh;
+    max-width: 90vh;
+    background-color: #000;
+    height: 50vh;
+    overflow: hidden;
+    border-radius: 1vh;
+}
+
+.demo img {
+    width: 100%;
+    min-height: 50vh;
+    margin: auto;
+    display: block;
+}
+
+.demo .left,
+.demo .right {
+    flex: 1 1;
+    min-width: 40vh;
+    max-width: 70vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-flow: wrap;
+}
+
+.demo .feature {
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 10%;
+    display: inline-block;
+    position: relative;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.demo .label {
+    font-size: 2.5vh;
+    color: #6d3dff;
+}
+
+.demo .desc {
+    font-size: 1.7vh;
 }
 
 /*ourtimeline*/

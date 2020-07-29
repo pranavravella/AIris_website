@@ -101,12 +101,16 @@ function initialize() {
         $(this)[0].click();
     });
 
-    $('.demo img').not(".base").addClass('remove')
     $(".demo i").on("click touchstart", function (e) {
-        var type = $(this).attr('class').replace("fa fa-plus-circle", "").replace(/ /g,'');
-        $('.demo .img-wrap .' + type).toggleClass('remove')
-        $('.demo img').not(".base").not("." + type).addClass('remove')
-        // $('.demo img').not(".base").not("."+type).addClass('remove').removeClass('shown')
+        var type = $(this).attr('name');
+        $(".demo i").each(function () {
+            $(this).removeClass("active");
+            $(".demo img").each(function () {
+                $(this).hide();
+            })
+        })
+        $(".demo img[name='" + type + "']").show();
+        $(this).addClass("active");
     })
 
 }

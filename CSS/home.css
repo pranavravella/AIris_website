@@ -554,6 +554,7 @@ hr {
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .demo .title {
@@ -586,13 +587,6 @@ hr {
     transition: opacity 0.2s ease-in-out;
 }
 
-.remove{
-    opacity:0;
-}
-.shown{
-    opacity: 1 !important;
-}
-
 .demo .left,
 .demo .right {
     flex: 1 1;
@@ -608,7 +602,7 @@ hr {
     width: 80%;
     display: inline-block;
     position: relative;
-    margin: 2vh auto;
+    margin: 0.5vh auto;
     padding: 1vh 2vh;
     border-radius: 0.5vh;
 }
@@ -619,28 +613,30 @@ hr {
     display: inline-block;
 }
 
-.demo i{
-    text-align: top;
-    font-size: 3.5vh;
-    display: inline-block;
-    margin: 2vh 1vh 0 1vh;
-    cursor: pointer;
-    background: linear-gradient(to bottom right, #06D6A0, #3bb5fc, #6d3dff);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: 0.2s ease;
-}
-
-.demo i:hover{
-    transform: scale(1.1);
-}
-
 .demo .desc {
     font-size: 1.7vh;
     color: rgb(0, 0, 0);
     transition: 0.2s ease;
+}
+
+.demo i {
+    text-align: top;
+    font-size: 3.3vh;
+    display: inline-block;
+    margin: 2vh 1vh 0 1vh;
+    cursor: pointer;
+    color: #1B98E0;
+    transition: 0.2s ease;
+    transform: translateY(-2px);
+}
+
+.demo .active {
+    transform: translateY(-2px) rotateZ(45deg);
+    color: #6d3dff;
+}
+
+.demo i:hover {
+    color: #6d3dff;
 }
 
 /*ourtimeline*/

@@ -53,8 +53,7 @@ function initialize() {
                 $("nav").css('height', 'calc(5vh + 2vw)');
                 $("nav .left").css('padding-top', '2vh');
                 $("nav .right").css('padding-top', '2vh');
-                $("nav *").css('color', '#fff');
-                $("nav span:hover").css('color', '#000');
+                $("nav span").css('color', '#fff');
             } else {
                 $("nav").css('background-color', '#fff');
                 $("nav").css('height', 'calc(3vh + 2vw)');
@@ -67,8 +66,7 @@ function initialize() {
                 0 4px 5px rgba(0, 0, 0, 0.05)`);
                 $("nav .left").css('padding-top', '0vh');
                 $("nav .right").css('padding-top', '0vh');
-                $("nav *").css('color', '#1B98E0');
-                $("nav span:hover").css('color', '#06D6A0');
+                $("nav span").css('color', '#3bb5fc');
             }
         }
         prev = curr;

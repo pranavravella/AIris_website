@@ -484,6 +484,11 @@ hr {
 .product i {
     color: #6d3dff;
     font-size: 6vh;
+    background: linear-gradient(to bottom right, #3bb5fc, #6d3dff);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /*highlight*/

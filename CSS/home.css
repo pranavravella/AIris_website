@@ -421,7 +421,7 @@ hr {
 
 /*product*/
 .product {
-    padding-top: 9vh;
+    padding-top: 4vh;
     padding-bottom: 4vh;
     overflow: hidden;
     position: relative;
@@ -464,12 +464,12 @@ hr {
 }
 
 .product .label {
-    font-size: 2.2vh;
+    font-size: 2.5vh;
     color: #1B98E0;
 }
 
 .product .desc {
-    font-size: 1.5vh;
+    font-size: 1.7vh;
 }
 
 .product .icon-wrap {
@@ -548,8 +548,8 @@ hr {
 
 /*demo*/
 .demo {
-    padding-top: 14vh;
-    padding-bottom: 7vh;
+    padding-top: 12vh;
+    padding-bottom: 10vh;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -560,7 +560,7 @@ hr {
     position: absolute;
     left: 0;
     right: 0;
-    top: 3vh;
+    top: 1vh;
 }
 
 .demo .img-wrap {
@@ -775,6 +775,10 @@ hr {
 }
 
 /*faqs*/
+.faqs {
+    padding-bottom: 4vh;
+}
+
 .faqs .row {
     justify-content: center;
     margin-top: 2vh;

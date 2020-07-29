@@ -567,17 +567,30 @@ hr {
     width: 40%;
     min-width: 75vh;
     max-width: 90vh;
-    background-color: #000;
+    background-color: rgb(255, 255, 255);
     height: 50vh;
     overflow: hidden;
     border-radius: 1vh;
+    display: grid;
 }
 
 .demo img {
     width: 100%;
     min-height: 50vh;
     margin: auto;
-    display: block;
+    grid-column: 1;
+    grid-row: 1;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.remove{
+    opacity:0;
+}
+.shown{
+    opacity: 1 !important;
 }
 
 .demo .left,
@@ -628,11 +641,6 @@ hr {
     font-size: 1.7vh;
     color: rgb(0, 0, 0);
     transition: 0.2s ease;
-    opacity: 0;
-}
-
-.shown{
-    opacity: 1 !important;
 }
 
 /*ourtimeline*/

@@ -538,8 +538,8 @@ hr {
 
 /*demo*/
 .demo {
-    padding-top: 12vh;
-    padding-bottom: 6vh;
+    padding-top: 14vh;
+    padding-bottom: 8vh;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -550,7 +550,7 @@ hr {
     position: absolute;
     left: 0;
     right: 0;
-    top: 2vh;
+    top: 3vh;
 }
 
 .demo .img-wrap {
@@ -602,7 +602,7 @@ hr {
 
 /*ourtimeline*/
 .ourtimeline {
-    padding-bottom: 9vh;
+    padding-bottom: 13vh;
     overflow-x: auto;
 }
 

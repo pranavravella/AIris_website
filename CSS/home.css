@@ -21,19 +21,27 @@
 }
 
 @font-face {
-    font-family: "Lato";
-    src: url("fonts/Lato/Lato-Regular.ttf");
-}
-
-@font-face {
     font-family: "Roboto";
     src: url("fonts/Roboto/Roboto-Bold.ttf");
     font-weight: bold;
 }
 
+
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto/Roboto-Regular.ttf");
+}
+
 @font-face {
     font-family: "Roboto";
     src: url("fonts/Roboto/Roboto-Light.ttf");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("fonts/Metropolis/Metropolis-Light.otf");
+    font-weight: 100;
 }
 
 @font-face {
@@ -67,6 +75,10 @@ p {
     margin-bottom: 0;
 }
 
+.desc {
+    font-family: 'Nunito';
+}
+
 a {
     text-decoration: none !important;
 }
@@ -97,6 +109,7 @@ nav {
     height: calc(3vh + 2vw);
     font-family: 'Metropolis', "arial";
     box-shadow: none;
+    font-weight: 100;
 }
 
 nav a {
@@ -251,6 +264,7 @@ hr {
     text-align: center;
     font-size: 5vh;
     font-family: 'Roboto';
+    font-weight: 100;
 }
 
 /*landing*/
@@ -344,7 +358,7 @@ hr {
 .landing .title {
     font-size: calc(4vh + 4vw);
     text-align: left;
-    font-family: "Lato";
+    font-family: "Nunito";
     color: #fff;
     padding-left: calc(10vh + 5vw);
     margin-top: -8vh;
@@ -353,7 +367,7 @@ hr {
 .landing .label {
     font-size: calc(1vh + 2vw);
     text-align: left;
-    font-family: "Lato";
+    font-family: "Metropolis";
     color: #fff;
     margin-top: -2vh;
     padding-left: calc(10vh + 5vw);
@@ -364,6 +378,7 @@ hr {
     border-radius: 0.5vh;
     height: auto;
     width: auto;
+    font-family: "Nunito";
     font-size: 2vh;
     background-color: #6d3dff;
     padding: 1vh 3vh;
@@ -388,10 +403,11 @@ hr {
     font-size: 2.5vh;
     margin-top: 1vh;
     color: #000;
+    font-family: "Lato";
 }
 
 .features .desc {
-    font-size: 1.8vh;
+    font-size: 1.7vh;
     margin-top: 1vh;
 }
 
@@ -412,7 +428,7 @@ hr {
 }
 
 .features .row>div {
-    height: 25vh;
+    height: auto;
     border-radius: 1vh;
     margin: 2vh 2%;
     min-width: 25vh;
@@ -421,10 +437,13 @@ hr {
 
 /*product*/
 .product {
-    padding-top: 4vh;
-    padding-bottom: 8vh;
+    padding-top: 6vh;
+    padding-bottom: 9vh;
     overflow: hidden;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .product .title {
@@ -465,12 +484,13 @@ hr {
 }
 
 .product .label {
-    font-size: 2.5vh;
+    font-size: 2.6vh;
     color: #1B98E0;
+    font-family: 'Metropolis';
 }
 
 .product .desc {
-    font-size: 1.7vh;
+    font-size: 1.8vh;
 }
 
 .product .icon-wrap {
@@ -537,6 +557,7 @@ hr {
     width: 80%;
     margin: auto;
     font-family: 'Roboto';
+    font-weight: 100;
     /* color: #6d3dff !important; */
 }
 
@@ -609,14 +630,19 @@ hr {
 }
 
 .demo .label {
-    font-size: 2.5vh;
+    font-size: 2.6vh;
     color: #1B98E0;
     display: inline-block;
+    font-family: 'Metropolis';
 }
 
 .demo .desc {
-    font-size: 1.7vh;
+    font-size: 1.8vh;
     color: rgb(0, 0, 0);
+}
+
+.demo .desc span {
+    color: #6d3dff;
 }
 
 .demo i {
@@ -627,11 +653,11 @@ hr {
     color: #1B98E0;
     transition: 0.3s;
     margin-left: 1vh;
-    transform: translateY(-0.35vh);
+    transform: translateY(-0.5vh);
 }
 
 .demo .active {
-    transform: translateY(-0.35vh) rotateZ(45deg);
+    transform: translateY(-0.5vh) rotateZ(45deg);
     color: #6d3dff;
 }
 
@@ -789,13 +815,15 @@ hr {
     color: #1B98E0;
     font-size: 4vh;
     font-family: 'Roboto';
+    font-weight: 100;
 }
 
 .funding .label {
-    font-size: 2vh;
+    font-size: 1.9vh;
     text-align: center;
-    width: 40%;
+    width: 45%;
     margin: 1vh auto;
+    font-family: 'Metropolis';
 }
 
 .funding .row {
@@ -822,20 +850,20 @@ hr {
 
 .faqs .row>div {
     height: auto;
-    margin: 2vh 3%;
+    margin: 2vh 2%;
     min-width: 30vh;
-    width: 26%;
+    width: 27%;
 }
 
 .faqs .label {
-    font-size: 2.4vh;
+    font-size: 2.3vh;
     border-bottom: #6d3dff solid 1px;
     display: inline-block;
     color: #1B98E0;
+    font-family: 'Metropolis';
 }
 
 .faqs .desc {
-    color: #444;
     margin-top: 0.5vh;
     font-size: 1.8vh;
 }
@@ -844,10 +872,11 @@ hr {
 .about .subtitle {
     text-align: center;
     font-size: 2.2vh;
-    color: #3bb5fc;
+    /* color: #3bb5fc; */
     width: 70%;
     margin: auto;
     margin-top: 0.7vh;
+    font-family: 'Metropolis';
 }
 
 .about .row {

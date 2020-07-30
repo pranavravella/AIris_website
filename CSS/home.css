@@ -398,6 +398,10 @@ hr {
 }
 
 /*features*/
+.features {
+    padding-bottom: 4vh;
+}
+
 .features .label {
     text-align: center;
     font-size: 2.5vh;
@@ -621,16 +625,16 @@ hr {
 }
 
 .demo .feature {
-    width: 80%;
+    width: 84%;
     display: inline-block;
     position: relative;
-    margin: 1vh auto;
+    margin: 0.25vh auto;
     padding: 1vh 2vh;
     border-radius: 0.5vh;
 }
 
 .demo .label {
-    font-size: 2.6vh;
+    font-size: 2.5vh;
     color: #1B98E0;
     display: inline-block;
     font-family: 'Metropolis';
@@ -908,6 +912,7 @@ hr {
 
 .about img {
     width: 100%;
+    min-height: 27vh;
 }
 
 .about .label {

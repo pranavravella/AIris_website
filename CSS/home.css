@@ -479,8 +479,8 @@ hr {
     padding-right: 10%;
     display: inline-block;
     position: relative;
-    margin-top: 3vh;
-    margin-bottom: 3vh;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
 }
 
 .product .label {
@@ -872,7 +872,7 @@ hr {
 .about .subtitle {
     text-align: center;
     font-size: 2.2vh;
-    /* color: #3bb5fc; */
+    color: #6d3dff;
     width: 70%;
     margin: auto;
     margin-top: 0.7vh;

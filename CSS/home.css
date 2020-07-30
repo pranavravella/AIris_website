@@ -130,7 +130,7 @@ nav .left {
     position: absolute;
     left: 5%;
     margin: auto;
-    padding-top: 2h;
+    padding-top: 2vh;
     padding-left: 2%;
 }
 
@@ -423,7 +423,6 @@ hr {
     background: linear-gradient(to bottom right, #06D6A0, #3bb5fc, #6d3dff);
     -webkit-background-clip: text;
     -moz-background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -442,7 +441,6 @@ hr {
 /*product*/
 .product {
     padding-top: 6vh;
-    padding-bottom: 9vh;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -517,7 +515,6 @@ hr {
     background: linear-gradient(to bottom right, #3bb5fc, #6d3dff);
     -webkit-background-clip: text;
     -moz-background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -575,7 +572,7 @@ hr {
 /*demo*/
 .demo {
     padding-top: 17vh;
-    padding-bottom: 6vh;
+    padding-bottom: 9vh;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -650,7 +647,6 @@ hr {
 }
 
 .demo i {
-    text-align: top;
     font-size: 3vh;
     display: inline-block;
     cursor: pointer;
@@ -693,7 +689,6 @@ hr {
     justify-content: center;
     align-items: center;
     padding-bottom: 0vh;
-    overflow-x: hide;
 }
 
 .ourtimeline .timeline {
@@ -704,7 +699,6 @@ hr {
     height: 21vh;
     margin: auto;
     user-select: none;
-    overflow-x: hide;
 }
 
 .ourtimeline:active {
@@ -887,11 +881,11 @@ hr {
     overflow: hidden;
 }
 
-.app .text a:first-of-type{
+.app .text a:first-of-type {
     padding: 2vh 2% 2vh 5%;
 }
 
-.app .text a:last-of-type{
+.app .text a:last-of-type {
     padding: 2vh 2% 2vh 1%;
 }
 
@@ -901,7 +895,7 @@ hr {
     transition: 0.3s;
 }
 
-.app .text img:hover{
+.app .text img:hover {
     transform: scale(1.05);
 }
 
@@ -910,9 +904,25 @@ hr {
     padding-top: 3vh;
 }
 
+.funding .row {
+    justify-content: center;
+}
+
+.funding .donate>div {
+    width: 35%;
+    margin: 2vh 1%;
+    min-width: 60vh;
+    max-width: 70vh;
+    transition: 0.3s;
+}
+
+.funding .donate>div:hover {
+    transform: scale(1.01);
+}
+
 .funding .subtitle {
     text-align: center;
-    color: #1B98E0;
+    color: #3bb5fc;
     font-size: 4vh;
     font-family: 'Roboto';
     font-weight: 100;
@@ -926,11 +936,38 @@ hr {
     font-family: 'Metropolis';
 }
 
-.funding .row {
-    justify-content: center;
+.funding .desc {
+    text-align: center;
+    font-size: 2.3vh;
+    margin-top: 2vh;
+    color: #6d3dff;
 }
 
-.funding img {
+.funding .img-wrap {
+    height: 35vh;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 1vh;
+    background-color: #000;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.014),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.018),
+        0 1.5px 1px rgba(0, 0, 0, 0.02),
+        0 2.3px 7.9px rgba(0, 0, 0, 0.012),
+        0 5px 5px rgba(0, 0, 0, 0.016),
+        0 8px 8px rgba(0, 0, 0, 0.05);
+}
+
+.funding .donate img {
+    height: 41vh;
+    min-width: 100%;
+}
+
+.funding .partners img {
     height: 10vh;
     margin: 2vh 3%;
 }
@@ -1002,7 +1039,7 @@ hr {
 }
 
 .about .img-wrap {
-    height: 27vh;
+    height: 23vh;
     overflow: hidden;
 }
 

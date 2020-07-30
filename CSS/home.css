@@ -809,6 +809,94 @@ hr {
     transform: translateY(-4vh);
 }
 
+/*app*/
+.app {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    background-image: url("../Pics/app.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.app .cover {
+    position: absolute;
+    height: 60vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3), transparent);
+}
+
+.app .row>div {
+    padding: 0 !important;
+}
+
+.app .text {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-flow: wrap;
+    min-height: 40vh;
+    /* background-color: #879199 !important; */
+}
+
+.app .img-wrap {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 60vh;
+}
+
+.app .img-wrap img {
+    width: 50%;
+    position: absolute;
+    top: 15%;
+    right: 5%;
+}
+
+.app .label {
+    font-size: 4.5vh;
+    text-align: left;
+    width: 100%;
+    padding-top: 3vh;
+    padding-left: 5%;
+    padding-right: 25%;
+    margin: auto;
+    font-family: 'Metropolis';
+    color: #3bb5fc !important;
+}
+
+.app .desc {
+    font-size: 2.2vh;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 30%;
+    margin: auto;
+    color: #fff !important;
+}
+
+.app .text a {
+    width: auto;
+    padding: 2vh 5%;
+    overflow: hidden;
+}
+
+.app .text img {
+    height: 6vh;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.app .text img:hover{
+    transform: scale(1.05);
+}
+
 /*funding*/
 .funding {
     padding-top: 3vh;

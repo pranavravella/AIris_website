@@ -861,15 +861,15 @@ hr {
 }
 
 .app .label {
-    font-size: 4.5vh;
+    font-size: 5vh;
     text-align: left;
     width: 100%;
-    padding-top: 3vh;
+    padding-top: 4vh;
     padding-left: 5%;
     padding-right: 25%;
     margin: auto;
-    font-family: 'Metropolis';
-    color: #3bb5fc !important;
+    font-family: 'Nunito';
+    color: #fff;
 }
 
 .app .desc {
@@ -883,8 +883,15 @@ hr {
 
 .app .text a {
     width: auto;
-    padding: 2vh 5%;
     overflow: hidden;
+}
+
+.app .text a:first-of-type{
+    padding: 2vh 2% 2vh 5%;
+}
+
+.app .text a:last-of-type{
+    padding: 2vh 2% 2vh 1%;
 }
 
 .app .text img {

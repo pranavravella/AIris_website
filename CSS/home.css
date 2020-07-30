@@ -461,7 +461,17 @@ hr {
     max-width: 80vh;
     margin: auto;
     display: block;
-    animation: bounce 2s infinite alternate;
+    animation: bobble 3s infinite alternate;
+}
+
+@keyframes bobble {
+    from {
+        transform: translateY(2vh);
+    }
+
+    to {
+        transform: translateY(-1vh);
+    }
 }
 
 .product .left,
@@ -896,7 +906,7 @@ hr {
 }
 
 .app .text img:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 /*funding*/
@@ -917,7 +927,7 @@ hr {
 }
 
 .funding .donate>div:hover {
-    transform: scale(1.01);
+    transform: scale(1.02);
 }
 
 .funding .subtitle {

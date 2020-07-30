@@ -671,8 +671,8 @@ hr {
 
 /*ourtimeline*/
 .ourtimeline {
-    padding-top: 9vh;
-    padding-bottom: 7vh;
+    padding-top: 5vh;
+    padding-bottom: 12vh;
     overflow-x: auto;
 }
 
@@ -929,8 +929,8 @@ hr {
 
 /*faqs*/
 .faqs {
-    padding-top: 3vh;
-    padding-bottom: 9vh;
+    padding-top: 8vh;
+    padding-bottom: 5vh;
 }
 
 .faqs .row {

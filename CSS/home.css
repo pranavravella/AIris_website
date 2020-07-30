@@ -440,6 +440,7 @@ hr {
     max-width: 80vh;
     margin: auto;
     display: block;
+    animation: bounce 2s infinite alternate;
 }
 
 .product .left,

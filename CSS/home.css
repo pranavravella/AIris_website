@@ -861,7 +861,7 @@ hr {
 .app .img-wrap img {
     width: 50vh;
     position: absolute;
-    bottom: -25vh;
+    bottom: -15vh;
     right: 5%;
 }
 
@@ -901,7 +901,6 @@ hr {
 
 .app .text img {
     height: 6vh;
-    cursor: pointer;
     transition: 0.3s;
 }
 

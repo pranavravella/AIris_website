@@ -616,22 +616,21 @@ hr {
 .demo .desc {
     font-size: 1.7vh;
     color: rgb(0, 0, 0);
-    transition: 0.2s ease;
 }
 
 .demo i {
     text-align: top;
-    font-size: 3.3vh;
+    font-size: 3vh;
     display: inline-block;
     cursor: pointer;
     color: #1B98E0;
-    transition: 0.2s ease;
+    transition: 0.3s;
     margin-left: 1vh;
-    transform: translateY(-0.25vh);
+    transform: translateY(-0.35vh);
 }
 
 .demo .active {
-    transform: translateY(-0.25vh) rotateZ(45deg);
+    transform: translateY(-0.35vh) rotateZ(45deg);
     color: #6d3dff;
 }
 

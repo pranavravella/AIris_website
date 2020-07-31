@@ -543,12 +543,12 @@ hr {
     align-items: center;
     align-content: center;
     flex-flow: wrap;
-    min-height: 40vh;
+    min-height: 35vh;
     /* background-color: #879199 !important; */
 }
 
 .highlight .img-wrap {
-    height: 40vh;
+    height: 35vh;
     width: auto;
     margin: auto;
     display: flex;
@@ -559,7 +559,7 @@ hr {
 
 .highlight img {
     width: 100%;
-    min-height: 40vh;
+    min-height: 35vh;
 }
 
 .highlight .label {

@@ -609,8 +609,10 @@ hr {
 }
 
 .demo img {
-    width: 100%;
+    width: 65%;
     min-height: 50vh;
+    bottom:10vh;
+    position: relative;
     margin: auto;
     grid-column: 1;
     grid-row: 1;

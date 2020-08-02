@@ -581,8 +581,7 @@ hr {
 
 /*demo*/
 .demo {
-    padding-top: 14vh;
-    padding-bottom: 5vh;
+    padding: 14vh 8% 5vh 8%;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -601,7 +600,6 @@ hr {
     width: 30%;
     min-width: 52vh;
     max-width: 53vh;
-    background-color: #000;
     height: 65vh;
     overflow: hidden;
     border-radius: 1vh;
@@ -632,10 +630,11 @@ hr {
     align-items: center;
     align-content: center;
     flex-flow: wrap;
+    padding: 0 !important;
 }
 
 .demo .feature {
-    width: 75%;
+    width: 100%;
     display: inline-block;
     position: relative;
     margin: 2vh auto;
@@ -643,12 +642,10 @@ hr {
     border-radius: 0.5vh;
 }
 
-.demo .left .feature {
-    margin-left: 25%;
-}
-
-.demo .right .feature {
-    margin-right: 25%;
+@media (max-width: 1450px) {
+    .demo .left, .demo .right {
+        flex: 0 0 100%;
+    }
 }
 
 .demo .label {

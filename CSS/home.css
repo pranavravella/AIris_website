@@ -581,8 +581,8 @@ hr {
 
 /*demo*/
 .demo {
-    padding-top: 17vh;
-    padding-bottom: 9vh;
+    padding-top: 14vh;
+    padding-bottom: 5vh;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -594,24 +594,25 @@ hr {
     position: absolute;
     left: 0;
     right: 0;
-    top: 6vh;
+    top: 3vh;
 }
 
 .demo .img-wrap {
-    width: 40%;
-    min-width: 75vh;
-    max-width: 90vh;
-    background-color: rgb(255, 255, 255);
-    height: 50vh;
+    width: 30%;
+    min-width: 52vh;
+    max-width: 53vh;
+    background-color: #000;
+    height: 65vh;
     overflow: hidden;
     border-radius: 1vh;
     display: grid;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 .demo img {
-    width: 65%;
+    width: 100%;
     min-height: 50vh;
-    bottom:10vh;
     position: relative;
     margin: auto;
     grid-column: 1;
@@ -634,23 +635,31 @@ hr {
 }
 
 .demo .feature {
-    width: 84%;
+    width: 75%;
     display: inline-block;
     position: relative;
-    margin: 0.25vh auto;
-    padding: 1vh 2vh;
+    margin: 2vh auto;
+    padding: .5vh 2vh;
     border-radius: 0.5vh;
 }
 
+.demo .left .feature {
+    margin-left: 25%;
+}
+
+.demo .right .feature {
+    margin-right: 25%;
+}
+
 .demo .label {
-    font-size: 2.5vh;
+    font-size: 2.9vh;
     color: #1B98E0;
     display: inline-block;
     font-family: 'Metropolis';
 }
 
 .demo .desc {
-    font-size: 1.8vh;
+    font-size: 2vh;
     color: rgb(0, 0, 0);
 }
 
@@ -665,11 +674,11 @@ hr {
     color: #1B98E0;
     transition: 0.3s;
     margin-left: 1vh;
-    transform: translateY(-0.5vh);
+    transform: translateY(-0.85vh);
 }
 
 .demo .active {
-    transform: translateY(-0.5vh) rotateZ(45deg);
+    transform: translateY(-0.85vh) rotateZ(45deg);
     color: #6d3dff;
 }
 

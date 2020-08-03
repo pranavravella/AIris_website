@@ -124,20 +124,24 @@ function initialize() {
             }
             isBeforeProduct = true;
         } else {
-            $(".product .left").insertBefore(".product .img-wrap");
-            $(".product .img-wrap").css("width", "30%");
+            if (isBeforeProduct) {
+                $(".product .left").insertBefore(".product .img-wrap");
+                $(".product .img-wrap").css("width", "30%");
+            }
             isBeforeProduct = false;
         }
 
-        if ($(window).width() * .78 < $(window).height() * 1.12) {
+        if ($(window).width() * .78 < $(window).height() * 1.14) {
             if (!isBeforeDemo) {
                 $(".demo .img-wrap").insertBefore(".demo .left");
                 $(".demo .img-wrap").css("width", "100%");
             }
             isBeforeDemo = true;
         } else {
-            $(".demo .left").insertBefore(".demo .img-wrap");
-            $(".demo .img-wrap").css("width", "30%");
+            if (isBeforeDemo) {
+                $(".demo .left").insertBefore(".demo .img-wrap");
+                $(".demo .img-wrap").css("width", "30%");
+            }
             isBeforeDemo = false;
         }
     }, 100);

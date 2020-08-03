@@ -279,13 +279,13 @@ hr {
 
 /*landing*/
 .landing {
-    min-height: 80vh;
+    min-height: 70vh;
     height: auto;
     position: relative;
     overflow: hidden;
-    padding: 7vh 8% 0;
+    padding: 7vh 8% 0vh;
     width: 100%;
-    background-image: url('../Pics/background.jpg');
+    background-image: url('../Pics/back.png');
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -295,7 +295,7 @@ hr {
 .landing .row {
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    min-height: 70vh;
     height: auto;
 }
 
@@ -307,6 +307,7 @@ hr {
     align-content: center;
     white-space: nowrap;
     min-width: 70vh;
+    padding-bottom: 2vh;
 }
 
 .landing .back {
@@ -320,6 +321,7 @@ hr {
 
 .cad {
     width: 75vh;
+    max-width: 80vw;
     margin: auto;
     animation: bounce 2s infinite alternate;
 }
@@ -392,7 +394,7 @@ hr {
     padding: 1vh 3vh;
     outline: none !important;
     color: #fff !important;
-    margin-bottom: 4vh;
+    margin-bottom: 0vh;
 }
 
 .landing a {
@@ -419,7 +421,7 @@ hr {
 }
 
 .features .desc {
-    font-size: 1.7vh;
+    font-size: 1.9vh;
     margin-top: 1vh;
 }
 
@@ -1133,7 +1135,7 @@ nav .wrap-icon {
         background-color: #fff;
         width: 100%;
         position: fixed;
-        top: calc(3vh + 2vw - 1px);
+        top: calc(7vh - 1px);
         left: 0;
         border-bottom-left-radius: 1vh;
         border-bottom-right-radius: 1vh;

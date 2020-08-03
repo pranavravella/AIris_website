@@ -1,5 +1,11 @@
 @font-face {
     font-family: "Nunito";
+    src: url("fonts/Nunito/Nunito-Light.ttf");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Nunito";
     src: url("fonts/Nunito/Nunito-Regular.ttf");
 }
 
@@ -105,8 +111,8 @@ nav .right {
 }
 
 nav {
-    font-size: calc(1vh + 0.65vw);
-    height: calc(3vh + 2vw);
+    font-size: 2.3vh;
+    height: 7vh;
     font-family: 'Metropolis', "arial";
     box-shadow: none;
     font-weight: 100;
@@ -135,7 +141,7 @@ nav .left {
 }
 
 nav .left img {
-    height: calc(2vh + 2vw);
+    height: 6vh;
 }
 
 nav .right {
@@ -157,8 +163,9 @@ hr {
     top: 0;
     left: 0;
     width: 100%;
-    height: calc(3vh + 2vw);
+    height: 7vh;
     z-index: 2;
+    padding-top: 1.8vh;
 }
 
 #nav-icon3 {
@@ -172,9 +179,8 @@ hr {
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     cursor: pointer;
-    height: 5vh;
+    height: 7vh;
     right: 10%;
-    top: calc(-0.25vh + 1vw);
 }
 
 #nav-icon3 span {
@@ -269,20 +275,34 @@ hr {
 
 /*landing*/
 .landing {
+    min-height: 80vh;
     height: auto;
-    min-height: 100vh;
     position: relative;
     overflow: hidden;
-    padding-bottom: calc(2vh + 1vw);
+    padding: 7vh 8% 0;
     width: 100%;
-    background-image: url('../Pics/background2.jpg');
+    background-image: url('../Pics/background.jpg');
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
+    /* background-color: #bbb; */
 }
 
-.landing>div {
-    overflow: unset;
+.landing .row {
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    height: auto;
+}
+
+.landing .row>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-flow: wrap;
+    align-content: center;
+    white-space: nowrap;
+    min-width: 70vh;
 }
 
 .landing .back {
@@ -295,34 +315,34 @@ hr {
 }
 
 .cad {
-    width: 90%;
-    margin-top: calc(7vh + 3vw);
-    margin-right: 15%;
+    width: 75vh;
+    margin: auto;
     animation: bounce 2s infinite alternate;
 }
 
 .cad-shadow {
     background: radial-gradient(50% 50%, rgba(0, 0, 0, 0.25) 0%, transparent 100%);
     width: 25%;
-    margin-left: 15%;
-    margin-top: calc(2vh + 2vw);
-    height: calc(2vh + 2vw);
+    margin-left: 50%;
+    height: 5vh;
     animation: shadow 2s infinite alternate;
+    margin-top: 8vh;
+    padding-bottom: 3vh;
 }
 
 @keyframes bounce {
     from {
-        transform: translateY(0px);
+        transform: translateY(0vh);
     }
 
     to {
-        transform: translateY(-2vh);
+        transform: translateY(2vh);
     }
 }
 
 @keyframes shadow {
     from {
-        transform: scaleX(1.8) scaleY(1.5);
+        transform: scaleX(1.8) scaleY(1.2);
     }
 
     to {
@@ -330,47 +350,30 @@ hr {
     }
 }
 
-.landing>:first-child {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-flow: wrap;
-    align-content: center;
-    min-height: 30vh;
-}
-
-.landing>:last-child {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.landing .row {
-    justify-content: center;
-    align-items: center;
-}
-
-.landing .text {
-    width: 50%;
+.landing .text-wrap {
+    width: 90%;
+    margin: 0 0 0 auto;
+    color: #fff;
+    padding-bottom: 10vh;
 }
 
 .landing .title {
-    font-size: calc(4vh + 4vw);
+    font-size: 13vh;
+    line-height: 12vh;
     text-align: left;
     font-family: "Nunito";
-    color: #fff;
-    padding-left: calc(10vh + 5vw);
-    margin-top: -8vh;
+    font-weight: 100;
+    width: 100%;
 }
 
 .landing .label {
-    font-size: calc(1vh + 2vw);
+    font-size: 3vh;
     text-align: left;
-    font-family: "Metropolis";
-    color: #fff;
-    margin-top: -2vh;
-    padding-left: calc(10vh + 5vw);
+    font-family: "Nunito";
+    display: inline-block;
+    width: 80%;
+    margin-top: -1vh;
+    margin-bottom: 2vh;
 }
 
 .landing button {
@@ -379,7 +382,7 @@ hr {
     height: auto;
     width: auto;
     font-family: "Nunito";
-    font-size: 2vh;
+    font-size: 2.5vh;
     background-color: #6d3dff;
     padding: 1vh 3vh;
     outline: none !important;
@@ -389,7 +392,6 @@ hr {
 .landing a {
     overflow: hidden;
     margin-top: 2vh;
-    margin-left: calc(10vh + 5vw);
     transition: 0.3s;
 }
 
@@ -440,9 +442,7 @@ hr {
 
 /*product*/
 .product {
-    padding-top: 6vh;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding: 6vh 3% 7vh;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -461,7 +461,7 @@ hr {
     width: 30%;
     min-width: 55vh;
     max-width: 80vh;
-    margin: auto;
+    margin: 0 3%;
     display: block;
     animation: bobble 3s infinite alternate;
 }
@@ -491,7 +491,7 @@ hr {
     width: 100%;
     display: inline-block;
     position: relative;
-    margin: 2.5vh 5%;
+    margin: 2.5vh 0%;
 }
 
 .product .label {
@@ -643,7 +643,9 @@ hr {
 }
 
 @media (max-width: 1450px) {
-    .demo .left, .demo .right {
+
+    .demo .left,
+    .demo .right {
         flex: 0 0 100%;
     }
 }
@@ -675,7 +677,8 @@ hr {
 }
 
 .demo .active {
-    transform: translateY(-0.85vh) rotateZ(45deg);
+    transform: translateY(-0.75vh) rotateZ(135deg);
+    font-size: 3.2vh;
     color: #6d3dff;
 }
 

@@ -50,13 +50,13 @@ function initialize() {
             if ($(window).scrollTop() == 0 && !isMobile && $(window).width() > 1170) {
                 $("nav").css('background-color', 'transparent');
                 $("nav").css('box-shadow', 'none');
-                $("nav").css('height', 'calc(5vh + 2vw)');
-                $("nav .left").css('padding-top', '2vh');
-                $("nav .right").css('padding-top', '2vh');
+                $("nav").css('height', '8vh');
+                $("nav .left").css('padding-top', '1vh');
+                $("nav .right").css('padding-top', '1vh');
                 $("nav span").css('color', '#fff');
             } else {
                 $("nav").css('background-color', '#fff');
-                $("nav").css('height', 'calc(3vh + 2vw)');
+                $("nav").css('height', '7vh');
                 $("nav").css('box-shadow', `
                 0 2.8px 2.2px rgba(0, 0, 0, 0.014),
                 0 6.7px 5.3px rgba(0, 0, 0, 0.018),

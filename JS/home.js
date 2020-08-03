@@ -72,9 +72,9 @@ function initialize() {
         prev = curr;
         var timewidth = $('.ourtimeline .timeline > :last-child').offset().left - $('.ourtimeline .timeline > :first-child')
             .offset()
-            .left + $('.ourtimeline .timeline > :last-child').width() + 0.03 * $(window).width();
+            .left + $('.ourtimeline .timeline > :last-child').width();
         var linewidth = timewidth - $('.ourtimeline .timeline > :first-child').width() / 2 - $(
-            '.ourtimeline .timeline > :last-child').width() / 2 - 0.03 * $(window).width();
+            '.ourtimeline .timeline > :last-child').width() / 2;
         $(".ourtimeline .timeline-wrap").width(timewidth + "px");
         $(".ourtimeline .timeline").width(timewidth + "px");
         $(".ourtimeline .line").width(linewidth + "px");

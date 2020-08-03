@@ -733,9 +733,8 @@ hr {
 
 .ourtimeline .timeline-wrap {
     height: 21vh;
+    margin: auto;
     margin-top: 8vh;
-    margin-left: auto;
-    margin-right: auto;
     transition: 0.3s;
     position: relative;
     display: flex;

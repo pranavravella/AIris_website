@@ -520,7 +520,7 @@ hr {
 .product .desc {
     font-size: 1.8vh;
     padding-left: 20%;
-    padding-right: 5%;
+    padding-right: 10%;
 }
 
 .product .icon-wrap {
@@ -628,9 +628,9 @@ hr {
 }
 
 .demo img {
-    width: 100%;
-    min-width: 52vh;
-    max-width: 53vh;
+    /* width: 100%; */
+    /* min-width: 52vh;
+    max-width: 53vh; */
     height: 100%;
     position: relative;
     margin: auto;
@@ -712,13 +712,22 @@ hr {
 .ourtimeline {
     padding-top: 5vh;
     padding-bottom: 12vh;
-    overflow-x: auto;
 }
 
 .ourtimeline .title {
     position: absolute;
     left: 0;
     right: 0;
+}
+
+.ourtimeline .pad {
+    width: 96%;
+    margin: auto;
+}
+
+.ourtimeline .pad::-webkit-scrollbar{
+    height: 0;
+    width: 0;
 }
 
 .ourtimeline .timeline-wrap {
@@ -732,6 +741,7 @@ hr {
     justify-content: center;
     align-items: center;
     padding-bottom: 0vh;
+    overflow-x: hidden;
 }
 
 .ourtimeline .timeline {
@@ -772,14 +782,6 @@ hr {
     cursor: pointer;
 }
 
-.ourtimeline .fa-chevron-left {
-    left: 4vh;
-}
-
-.ourtimeline .fa-chevron-right {
-    right: 4vh;
-}
-
 .ourtimeline .event {
     display: inline-block;
     margin-left: 1.5%;
@@ -788,6 +790,14 @@ hr {
     width: auto;
     height: 25vh;
     position: relative;
+}
+
+.ourtimeline .event:first-child{
+    margin-left: 0%;
+}
+
+.ourtimeline .event:last-child{
+    margin-right: 0%;
 }
 
 .ourtimeline .dot {

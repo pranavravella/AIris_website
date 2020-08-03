@@ -16,7 +16,7 @@ function initialize() {
         }, 500);
     });
 
-    const slider = document.querySelector('.ourtimeline ');
+    const slider = document.querySelector('.ourtimeline .pad');
     let isDown = false;
     let startX;
     let scrollLeft;

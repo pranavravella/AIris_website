@@ -712,6 +712,7 @@ hr {
 .ourtimeline {
     padding-top: 5vh;
     padding-bottom: 12vh;
+    overflow-x: hidden;
 }
 
 .ourtimeline .title {

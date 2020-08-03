@@ -619,7 +619,6 @@ hr {
 .demo .img-wrap {
     width: 30%;
     min-width: 52vh;
-    max-width: 53vh;
     height: 65vh;
     overflow: hidden;
     border-radius: 1vh;
@@ -630,9 +629,12 @@ hr {
 
 .demo img {
     width: 100%;
-    min-height: 50vh;
+    min-width: 52vh;
+    max-width: 53vh;
+    height: 100%;
     position: relative;
     margin: auto;
+    border-radius: 1vh;
     grid-column: 1;
     grid-row: 1;
     -webkit-transition: opacity 0.2s ease-in-out;

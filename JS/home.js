@@ -130,15 +130,15 @@ function initialize() {
         }
 
         if ($(window).width() * .78 < $(window).height() * 1.12) {
-            // if (!isBeforeDemo) {
-            $(".demo .img-wrap").insertBefore(".demo .left");
-            $(".demo .img-wrap").css("width", "100%");
-            // }
-            // isBeforeDemo = true;
+            if (!isBeforeDemo) {
+                $(".demo .img-wrap").insertBefore(".demo .left");
+                $(".demo .img-wrap").css("width", "100%");
+            }
+            isBeforeDemo = true;
         } else {
             $(".demo .left").insertBefore(".demo .img-wrap");
             $(".demo .img-wrap").css("width", "30%");
-            // isBeforeDemo = false;
+            isBeforeDemo = false;
         }
     }, 100);
 }

@@ -358,6 +358,7 @@ hr {
     width: 90%;
     margin: 0 0 0 auto;
     color: #fff;
+    padding-top: 4vh;
     padding-bottom: 10vh;
 }
 
@@ -391,6 +392,7 @@ hr {
     padding: 1vh 3vh;
     outline: none !important;
     color: #fff !important;
+    margin-bottom: 4vh;
 }
 
 .landing a {

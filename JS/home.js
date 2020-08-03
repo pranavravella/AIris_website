@@ -114,5 +114,32 @@ function initialize() {
         }
     })
 
+    var isBeforeProduct = false;
+    var isBeforeDemo = false;
+    setInterval(() => {
+        if ($(window).width() * .94 < $(window).height() * 1.45) {
+            if (!isBeforeProduct) {
+                $(".product .img-wrap").insertBefore(".product .left");
+                $(".product .img-wrap").css("width", "100%");
+            }
+            isBeforeProduct = true;
+        } else {
+            $(".product .left").insertBefore(".product .img-wrap");
+            $(".product .img-wrap").css("width", "30%");
+            isBeforeProduct = false;
+        }
+
+        if ($(window).width() * .78 < $(window).height() * 1.12) {
+            // if (!isBeforeDemo) {
+            $(".demo .img-wrap").insertBefore(".demo .left");
+            $(".demo .img-wrap").css("width", "100%");
+            // }
+            // isBeforeDemo = true;
+        } else {
+            $(".demo .left").insertBefore(".demo .img-wrap");
+            $(".demo .img-wrap").css("width", "30%");
+            // isBeforeDemo = false;
+        }
+    }, 100);
 }
 $(initialize)

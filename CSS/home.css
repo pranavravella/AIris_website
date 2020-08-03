@@ -465,11 +465,19 @@ hr {
     top: 4vh;
 }
 
-.product img {
+.product .img-wrap {
     width: 30%;
     min-width: 55vh;
-    max-width: 80vh;
-    margin: 0 3%;
+    padding-top: 1vh;
+    padding-bottom: 2vh;
+    overflow: hidden;
+}
+
+.product img {
+    width: 100%;
+    min-width: 55vh;
+    max-width: 70vh;
+    margin: 0 auto;
     display: block;
     animation: bobble 3s infinite alternate;
 }
@@ -972,6 +980,7 @@ hr {
     text-align: center;
     font-size: 2.3vh;
     margin-top: 2vh;
+    margin-bottom: 2vh;
     color: #6d3dff;
 }
 

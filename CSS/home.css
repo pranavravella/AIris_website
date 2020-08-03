@@ -134,21 +134,25 @@ nav span:hover {
 
 nav .left {
     position: absolute;
-    left: 5%;
+    left: 8%;
     margin: auto;
-    padding-top: 2vh;
+    padding-top: 1vh;
     padding-left: 2%;
 }
 
 nav .left img {
-    height: 6vh;
+    height: 5.5vh;
+    background-color: #fff;
+    border-radius: 100%;
+    padding: 0.25vh;
+    transform: rotateZ(45deg);
 }
 
 nav .right {
     position: absolute;
-    right: 5%;
+    right: 8%;
     margin: auto;
-    padding-top: 2vh;
+    padding-top: 1vh;
     padding-right: 2%;
 }
 

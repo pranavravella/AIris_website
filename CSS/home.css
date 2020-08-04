@@ -601,7 +601,7 @@ hr {
 
 /*demo*/
 .demo {
-    padding: 14vh 8% 5vh 8%;
+    padding: 14vh 8% 5vh;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -617,14 +617,14 @@ hr {
 }
 
 .demo .img-wrap {
-    width: 30%;
+    width: 38%;
     min-width: 52vh;
+    /* max-width: 56vh; */
     height: 65vh;
     overflow: hidden;
     border-radius: 1vh;
     display: grid;
-    margin-left: 3%;
-    margin-right: 3%;
+    position: relative;
 }
 
 .demo img {
@@ -635,12 +635,9 @@ hr {
     position: relative;
     margin: auto;
     border-radius: 1vh;
-    grid-column: 1;
-    grid-row: 1;
-    -webkit-transition: opacity 0.2s ease-in-out;
-    -moz-transition: opacity 0.2s ease-in-out;
-    -o-transition: opacity 0.2s ease-in-out;
-    transition: opacity 0.2s ease-in-out;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
 .demo .left,
@@ -662,14 +659,6 @@ hr {
     margin: 2vh auto;
     padding: .5vh 2vh;
     border-radius: 0.5vh;
-}
-
-@media (max-width: 1450px) {
-
-    .demo .left,
-    .demo .right {
-        flex: 0 0 100%;
-    }
 }
 
 .demo .label {

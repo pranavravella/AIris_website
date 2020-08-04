@@ -131,7 +131,7 @@ function initialize() {
             isBeforeProduct = false;
         }
 
-        if ($(window).width() * .78 < $(window).height() * 1.14) {
+        if ($(window).width() * .84 < $(window).height() * 1.12) {
             if (!isBeforeDemo) {
                 $(".demo .img-wrap").insertBefore(".demo .left");
                 $(".demo .img-wrap").css("width", "100%");
@@ -144,6 +144,8 @@ function initialize() {
             }
             isBeforeDemo = false;
         }
+
+        console.log($(window).width() * .84, $(window).height() * 1.12, $(window).height());
     }, 100);
 }
 $(initialize)

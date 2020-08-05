@@ -72,10 +72,6 @@ body {
     font-family: "Lato";
 }
 
-body * {
-    overflow-y: hidden;
-}
-
 p {
     margin-top: 0;
     margin-bottom: 0;
@@ -289,6 +285,7 @@ hr {
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
+    overflow-x: hidden;
     /* background-color: #bbb; */
 }
 
@@ -306,7 +303,9 @@ hr {
     flex-flow: wrap;
     align-content: center;
     white-space: nowrap;
-    min-width: 70vh;
+    width: 50%;
+    min-width: 60vh;
+    max-width: 80vh;
     padding-bottom: 2vh;
 }
 
@@ -575,6 +574,7 @@ hr {
     position: relative;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .highlight img {
@@ -628,9 +628,6 @@ hr {
 }
 
 .demo img {
-    /* width: 100%; */
-    /* min-width: 52vh;
-    max-width: 53vh; */
     height: 100%;
     position: relative;
     margin: auto;
@@ -663,6 +660,7 @@ hr {
 
 .demo .label {
     font-size: 2.9vh;
+    line-height: 2.9vh;
     color: #1B98E0;
     display: inline-block;
     font-family: 'Metropolis';
@@ -670,6 +668,7 @@ hr {
 
 .demo .desc {
     font-size: 2vh;
+    margin-top: 0.5vh;
     color: rgb(0, 0, 0);
 }
 
@@ -678,18 +677,18 @@ hr {
 }
 
 .demo i {
-    font-size: 3vh;
+    font-size: 2.9vh;
+    line-height: 2.9vh;
     display: inline-block;
     cursor: pointer;
     color: #1B98E0;
     transition: 0.3s;
     margin-left: 1vh;
-    transform: translateY(-0.85vh);
+    transform: translateY(-0.1vh);
 }
 
 .demo .active {
-    transform: translateY(-0.75vh) rotateZ(135deg);
-    font-size: 3.2vh;
+    transform: translateY(-0.1vh) rotateZ(135deg);
     color: #6d3dff;
 }
 
@@ -862,7 +861,7 @@ hr {
 
 .app .cover {
     position: absolute;
-    height: 60vh;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 0;
@@ -871,6 +870,7 @@ hr {
 
 .app .row>div {
     padding: 0 !important;
+    width: 50%;
 }
 
 .app .text {
@@ -878,7 +878,9 @@ hr {
     align-items: center;
     align-content: center;
     flex-flow: wrap;
-    min-height: 40vh;
+    min-height: 30vh;
+    height: auto;
+    position: relative;
     /* background-color: #879199 !important; */
 }
 
@@ -888,6 +890,7 @@ hr {
     top: 0;
     left: 0;
     height: 60vh;
+    overflow: hidden;
 }
 
 .app .img-wrap img {
@@ -1030,7 +1033,7 @@ hr {
 .faqs .row>div {
     height: auto;
     margin: 2vh 2%;
-    min-width: 30vh;
+    min-width: 35vh;
     width: 27%;
 }
 

@@ -138,7 +138,7 @@ function initialize() {
         } else {
             if (isBeforeDemo) {
                 $(".demo .left").insertBefore(".demo .img-wrap");
-                $(".demo .img-wrap").css("width", "30%");
+                $(".demo .img-wrap").css("width", "38%");
             }
             isBeforeDemo = false;
         }

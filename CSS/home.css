@@ -654,7 +654,7 @@ hr {
     display: inline-block;
     position: relative;
     margin: 2vh auto;
-    padding: .5vh 4vh;
+    padding: .5vh 1vh;
     border-radius: 0.5vh;
 }
 

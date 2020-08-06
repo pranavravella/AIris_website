@@ -1198,4 +1198,8 @@ nav .wrap-icon {
     nav a:hover {
         background-color: #ddd !important;
     }
+
+    .landing .text-wrap{
+        padding-bottom: 2vh;
+    }
 }

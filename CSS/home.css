@@ -700,7 +700,11 @@ hr {
 .ourtimeline {
     padding-top: 5vh;
     padding-bottom: 12vh;
-    overflow-x: hidden;
+    overflow: hidden !important;
+}
+
+.ourtimeline * {
+    overflow-y: hidden !important;
 }
 
 .ourtimeline .title {
@@ -729,7 +733,7 @@ hr {
     justify-content: center;
     align-items: center;
     padding-bottom: 0vh;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .ourtimeline .timeline {
@@ -737,7 +741,7 @@ hr {
     display: inline-block;
     position: absolute;
     top: 1.5vh;
-    height: 21vh;
+    height: 19.5vh;
     margin: auto;
     user-select: none;
 }

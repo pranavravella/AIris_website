@@ -51,8 +51,7 @@ function initialize() {
                 $("nav").css('background-color', 'transparent');
                 $("nav").css('box-shadow', 'none');
                 $("nav").css('height', '8vh');
-                $("nav .left").css('padding-top', '1vh');
-                $("nav .right").css('padding-top', '1vh');
+                $("nav .left, nav .right").css('padding-top', '1vh');
                 $("nav span").css('color', '#fff');
             } else {
                 $("nav").css('background-color', '#fff');
@@ -64,8 +63,7 @@ function initialize() {
                 0 2.3px 2px rgba(0, 0, 0, 0.022),
                 0 3.8px 2px rgba(0, 0, 0, 0.026),
                 0 4px 5px rgba(0, 0, 0, 0.05)`);
-                $("nav .left").css('padding-top', '0vh');
-                $("nav .right").css('padding-top', '0vh');
+                $("nav .left, nav .right").css('padding-top', '0vh');
                 $("nav span").css('color', '#3bb5fc');
             }
         }
@@ -148,8 +146,8 @@ function initialize() {
         console.log($(window).width() * .84, $(window).height() * 1.12, $(window).height());
     }, 100);
 
-    var css = 
-    `
+    var css =
+        `
     .product img {
         animation: none;
     }

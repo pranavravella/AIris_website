@@ -1072,11 +1072,11 @@ hr {
 
 .about .row>div {
     height: auto;
-    border-radius: 0.75vh;
+    border-radius: 0.5vh;
     margin: 2vh 1%;
-    min-width: 30vh;
-    max-width: 37vh;
-    width: 16%;
+    min-width: 25vh;
+    max-width: 28vh;
+    width: 13%;
     padding-bottom: 2vh;
     box-shadow:
         0 2.8px 2.2px rgba(0, 0, 0, 0.014),
@@ -1088,18 +1088,18 @@ hr {
 }
 
 .about .img-wrap {
-    height: 23vh;
+    height: 16vh;
     overflow: hidden;
-    border-radius: 0.75vh 0.75vh 0 0;
+    border-radius: 0.5vh 0.5vh 0 0;
 }
 
 .about img {
     width: 100%;
-    min-height: 27vh;
+    min-height: 16vh;
 }
 
 .about .label {
-    font-size: 2.5vh;
+    font-size: 2vh;
     text-align: center;
     margin-top: 1vh;
 }

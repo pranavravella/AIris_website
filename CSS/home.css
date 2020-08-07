@@ -322,7 +322,7 @@ hr {
     width: 75vh;
     max-width: 80vw;
     margin: auto;
-    animation: bounce 3s infinite alternate;
+    animation: bounce 2s infinite alternate;
 }
 
 .cad-shadow {
@@ -1090,6 +1090,7 @@ hr {
 .about .img-wrap {
     height: 23vh;
     overflow: hidden;
+    border-radius: 0.75vh 0.75vh 0 0;
 }
 
 .about img {

@@ -78,7 +78,7 @@ function initialize() {
         $(".ourtimeline .line").width(linewidth + "px");
         marginleft += parseInt($(".ourtimeline .line").offset().left - $('.ourtimeline .timeline > :first-child .dot').offset().left - 0.01 * $(window).height());
         $(".ourtimeline .line").css("transform", "translateX(" + (-1 * marginleft) + "px)")
-    }, 20)
+    }, 50)
 
     $("nav #nav-icon3").on("click touchstart", function (e) {
         if (e.type == "click" && isMobile)

@@ -72,6 +72,21 @@ body {
     font-family: "Lato";
 }
 
+body::-webkit-scrollbar {
+    width: 1.5vh;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #3bb5fc;
+    border-radius: 0.65vh;
+    border-left: 0.35vh solid #fff;
+    border-right: 0.35vh solid #fff;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #6d3dff;
+}
+
 p {
     margin-top: 0;
     margin-bottom: 0;

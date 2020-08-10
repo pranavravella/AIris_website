@@ -958,10 +958,6 @@ hr {
     transition: 0.3s;
 }
 
-.app .text img:hover {
-    transform: scale(1.03);
-}
-
 /*funding*/
 .funding {
     padding-top: 3vh;

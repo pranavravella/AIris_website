@@ -73,14 +73,14 @@ body {
 }
 
 body::-webkit-scrollbar {
-    width: 1.5vh;
+    width: 15px;
 }
 
 body::-webkit-scrollbar-thumb {
     background-color: #3bb5fc;
-    border-radius: 0.65vh;
-    border-left: 0.35vh solid #fff;
-    border-right: 0.35vh solid #fff;
+    border-radius: 20px;
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
 }
 
 body::-webkit-scrollbar-thumb:hover {

@@ -275,8 +275,12 @@ function initialize() {
         }
 
         .about .row>div {
-            min-width: 37vh;
+            min-width: 30vh;
             margin: 3vh 1%;
+        }
+
+        .about .img-wrap {
+            height: 20vh;
         }
     }
 

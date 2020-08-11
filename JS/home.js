@@ -99,7 +99,9 @@ function initialize() {
         $(this)[0].click();
     });
 
-    $(".demo i").on("click", function (e) {
+    $(".demo i").on("click touchstart", function (e) {
+        if (e.type == "click" && isMobile)
+            return;
         var type = $(this).attr('name');
         $(".demo img").hide();
         if ($(this).hasClass("active")) {

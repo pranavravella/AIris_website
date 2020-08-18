@@ -47,7 +47,7 @@ function initialize() {
     setInterval(function () {
         curr = $(window).scrollTop() + $(window).width();
         if (curr != prev) {
-            if ($(window).scrollTop() == 0 && !isMobile && $(window).width() > 1170) {
+            if ($(window).scrollTop() == 0 && !isMobile && $(window).width() > $(window).height() * 1.1) {
                 $("nav").css('background-color', 'transparent');
                 $("nav").css('box-shadow', 'none');
                 $("nav").css('height', '7vh');

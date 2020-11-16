@@ -65,6 +65,10 @@ function initialize() {
                 0 4px 5px rgba(0, 0, 0, 0.05)`);
                 $("nav .left, nav .right").css('padding-top', '0vh');
                 $("nav span").css('color', '#3bb5fc');
+
+                if ($("nav #nav-icon3").attr("expanded") == "true") {
+                    $("nav #nav-icon3").click();
+                }
             }
         }
         prev = curr;
@@ -80,9 +84,7 @@ function initialize() {
         $(".ourtimeline .line").css("transform", "translateX(" + (-1 * marginleft) + "px)")
     }, 50)
 
-    $("nav #nav-icon3").on("click touchstart", function (e) {
-        if (e.type == "click" && isMobile)
-            return;
+    $("nav #nav-icon3").on("click", function (e) {
         $(this).toggleClass('open');
         if ($(this).attr("expanded") == "true") {
             $(".navbar-nav").css("opacity", "0");
@@ -228,23 +230,21 @@ function initialize() {
             top: 2vh;
         }
 
-        .app .row>div {
-            width: 100%;
+        .app .label,
+        .app .desc {
+            padding-left: 0%;
+            padding-right: 0%;
+            width: 80%;
+            text-align: center;
         }
 
-        .app .img-wrap img {
-            width: 40vh;
-            left: 0;
-            height: 50vh;
+        .app .img-wrap {
+            display: none;
         }
 
         .demo .img-wrap {
             min-width: 30vh;
             margin-bottom: 4vh;
-        }
-
-        .app .img-wrap img {
-            bottom: -15vh;
         }
 
         .funding .label {
@@ -263,6 +263,10 @@ function initialize() {
             height: 30vh;
         }
 
+        .funding .partners img {
+            margin: 2vh 80%;
+        }
+
         .faqs .row {
             padding-left: 2%;
             padding-right: 2%;
@@ -274,15 +278,6 @@ function initialize() {
 
         .faqs .desc {
             font-size: 2vh;
-        }
-
-        .about .row>div {
-            min-width: 30vh;
-            margin: 3vh 1%;
-        }
-
-        .about .img-wrap {
-            height: 20vh;
         }
     }
 

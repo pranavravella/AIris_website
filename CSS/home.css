@@ -1,39 +1,45 @@
 @font-face {
-    font-family: "Nunito";
-    src: url("fonts/Nunito/Nunito-Light.ttf");
-    font-weight: 100;
+    font-family: 'Nunito';
+    src: url("fonts/Nunito/nunito-light-webfont.woff2") format('woff2');
+    font-weight: 100
 }
 
 @font-face {
-    font-family: "Nunito";
-    src: url("fonts/Nunito/Nunito-Regular.ttf");
+    font-family: 'Nunito';
+    src: url("fonts/Nunito/nunito-regular-webfont.woff2") format('woff2')
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url("fonts/Lato/lato-light-webfont.woff2") format('woff2');
+    font-weight: 100
 }
 
 @font-face {
     font-family: "Lato";
-    src: url("fonts/Lato/Lato-Regular.ttf");
+    src: url("fonts/Lato/lato-regular-webfont.woff2") format('woff2')
 }
 
 @font-face {
     font-family: "Roboto";
-    src: url("fonts/Roboto/Roboto-Regular.ttf");
+    src: url("fonts/Roboto/roboto-regular.woff2") format('woff2');
 }
 
 @font-face {
     font-family: "Roboto";
-    src: url("fonts/Roboto/Roboto-Light.ttf");
+    src: url("fonts/Roboto/roboto-light.woff2") format('woff2');
     font-weight: 100;
 }
 
 @font-face {
     font-family: "Metropolis";
-    src: url("fonts/Metropolis/Metropolis-Light.otf");
+    src: url("fonts/Metropolis/metropolis-light-webfont.woff2") format('woff2');
     font-weight: 100;
 }
 
 @font-face {
     font-family: "Metropolis";
-    src: url("fonts/Metropolis/Metropolis-Regular.otf");
+    src: url("fonts/Metropolis/metropolis-regular-webfont.woff2") format('woff2');
 }
 
 html,

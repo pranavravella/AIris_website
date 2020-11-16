@@ -898,24 +898,20 @@ hr {
 .app .label {
     font-size: 5vh;
     text-align: left;
-    width: 100%;
+    width: 60vh;
     padding-top: 4vh;
-    padding-left: 5%;
-    padding-right: 25%;
-    margin: auto;
     font-family: 'Roboto';
     color: #fff;
     font-weight: 100;
+    margin-left: 5vh;
 }
 
 .app .desc {
     font-size: 2.2vh;
-    width: 100%;
-    padding-left: 5%;
-    padding-right: 30%;
+    width: 60vh;
     padding-bottom: 5vh;
-    margin: auto;
-    color: #fff !important;
+    color: #fff;
+    margin-left: 5vh;
 }
 
 .app .text a {
@@ -1052,8 +1048,8 @@ hr {
 .about .subtitle {
     text-align: center;
     font-size: 2.2vh;
-    color: #6d3dff;
-    width: 70%;
+    color: #06D6A0;
+    width: 50vh;
     margin: auto;
     margin-top: 0.7vh;
     font-family: 'Metropolis';

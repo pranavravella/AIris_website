@@ -229,12 +229,15 @@ function initialize() {
             top: 2vh;
         }
 
+        .app .text {
+            justify-content: center
+        }
+
         .app .label,
         .app .desc {
-            padding-left: 0%;
-            padding-right: 0%;
             width: 80%;
             text-align: center;
+            margin: 0;
         }
 
         .app .img-wrap {

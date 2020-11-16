@@ -10,28 +10,9 @@
 }
 
 @font-face {
-    font-family: "Nunito";
-    src: url("fonts/Nunito/Nunito-Bold.ttf");
-    font-weight: bold;
-}
-
-@font-face {
     font-family: "Lato";
     src: url("fonts/Lato/Lato-Regular.ttf");
 }
-
-@font-face {
-    font-family: "Lato";
-    src: url("fonts/Lato/Lato-Bold.ttf");
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: "Roboto";
-    src: url("fonts/Roboto/Roboto-Bold.ttf");
-    font-weight: bold;
-}
-
 
 @font-face {
     font-family: "Roboto";
@@ -53,12 +34,6 @@
 @font-face {
     font-family: "Metropolis";
     src: url("fonts/Metropolis/Metropolis-Regular.otf");
-}
-
-@font-face {
-    font-family: "Metropolis";
-    src: url("fonts/Metropolis/Metropolis-Bold.otf");
-    font-weight: bold;
 }
 
 html,

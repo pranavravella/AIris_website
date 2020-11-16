@@ -903,10 +903,10 @@ hr {
 }
 
 .app .img-wrap img {
-    width: 50vh;
+    width: 55vh;
     position: absolute;
-    bottom: -25vh;
-    right: 5%;
+    bottom: -17vh;
+    right: 0%;
 }
 
 .app .label {

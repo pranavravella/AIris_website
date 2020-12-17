@@ -60,8 +60,6 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
     background-color: #3bb5fc;
     border-radius: 20px;
-    /* border-left: 2px solid #fff;
-    border-right: 2px solid #fff; */
 }
 
 body::-webkit-scrollbar-thumb:hover {
@@ -1103,7 +1101,7 @@ hr {
 
 /*footer*/
 footer {
-    height: 15vh;
+    height: 12vh;
     background-color: #282731;
     display: flex;
     align-items: center;

@@ -40,7 +40,6 @@ function initialize() {
     });
 
     var marginleft = 0;
-
     var prev = -1;
     var curr = 0;
     setInterval(function () {
@@ -149,149 +148,8 @@ function initialize() {
         console.log($(window).width() * .84, $(window).height() * 1.12, $(window).height());
     }, 100);
 
-    var css =
-        `
-    .product img {
-        animation: none;
-    }
-
-    @media only screen and (orientation:portrait) {
-        .features,
-        .ourtimeline,
-        .about,
-        .product,
-        .funding,
-        .faqs,
-        .demo {
-            padding-top: 3vh;
-            padding-bottom: 3vh;
-        }
-
-        .landing {
-            padding: 7vh 2% 0vh;
-        }
-
-        .landing .row>div {
-            min-width: 0;
-            width: 100%;
-        }
-
-        .landing .title {
-            font-size: 10vh;
-            line-height: 10vh;
-        }
-
-        .landing .text-wrap {
-            padding-bottom: 2vh;
-        }
-
-        .features .label {
-            font-size: 3vh;
-        }
-
-        .features .desc {
-            font-size: 2vh;
-        }
-
-        .cad {
-            max-width: 90vw;
-        }
-
-        .highlight .row>div  {
-            width: 100%;
-            min-width: 0;
-            flex: unset;
-        }
-
-        .highlight .label {
-            padding-top: 2vh;
-        }
-
-        .highlight .desc {
-            padding-bottom: 3vh;
-        }
-
-        .product {
-            padding: 2vh 3%;
-        }
-
-        .product img {
-            min-width: 0;
-            width: 80%;
-            margin-bottom: 3vh;
-        }
-
-        .demo {
-            padding: 12vh 8% 0vh;
-        }
-
-        .demo .title {
-            top: 2vh;
-        }
-
-        .app .text {
-            justify-content: center
-        }
-
-        .app .label,
-        .app .desc {
-            width: 80%;
-            text-align: center;
-            margin: 0;
-        }
-
-        .app .img-wrap {
-            display: none;
-        }
-
-        .demo .img-wrap {
-            min-width: 30vh;
-            margin-bottom: 4vh;
-        }
-
-        .funding .label {
-            width: 75%;
-        }
-
-        .funding .donate>div {
-            min-width: 45vh;
-        }
-
-        .funding .img-wrap {
-            height: 30vh;
-        }
-
-        .funding .donate img {
-            height: 30vh;
-        }
-
-        .funding .partners img {
-            margin: 2vh 80%;
-        }
-
-        .faqs .row {
-            padding-left: 2%;
-            padding-right: 2%;
-        }
-
-        .faqs .label {
-            font-size: 2.5vh;
-        }
-
-        .faqs .desc {
-            font-size: 2vh;
-        }
-    }
-
-    @media only screen and (orientation:landscape) {
-        .cad {
-            animation: none;
-        }
-    }
-    `
-
     if (isMobile) {
-        $("head").append('<style>' + css + '</style>');
+        $("head").append('<link rel="stylesheet" href="CSS/mobile.css">');
     }
 }
 $(initialize)

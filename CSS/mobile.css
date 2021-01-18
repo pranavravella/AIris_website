@@ -82,10 +82,10 @@
     }
 
     .app .label,
-    .app .desc {
-        width: 80%;
+    .app .wrap {
+        width: 80% !important;
         text-align: center;
-        margin: 0;
+        margin: 0 !important;
     }
 
     .app .img-wrap {

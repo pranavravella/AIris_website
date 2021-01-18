@@ -904,26 +904,31 @@ hr {
     margin-left: 5vh;
 }
 
-.app .desc {
-    font-size: 2.2vh;
+.app div.wrap{
     width: 60vh;
     padding-bottom: 5vh;
-    color: #fff;
     margin-left: 5vh;
+}
+
+.app .desc {
+    font-size: 2.2vh;
+    color: #fff;
+    margin-bottom: 1vh;
 }
 
 .app .text a {
     width: auto;
     overflow: hidden;
+    margin-right: 1vh;
 }
 
-.app .text a:first-of-type {
+/* .app .text a:first-of-type {
     padding: 2vh 2% 2vh 5%;
 }
 
 .app .text a:last-of-type {
     padding: 2vh 2% 2vh 1%;
-}
+} */
 
 .app .text img {
     height: 6vh;

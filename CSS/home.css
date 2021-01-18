@@ -585,7 +585,7 @@ hr {
 
 /*demo*/
 .demo {
-    padding: 14vh 8% 6vh;
+    padding: 14vh 3% 6vh;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -601,8 +601,8 @@ hr {
 }
 
 .demo .img-wrap {
-    width: 38%;
-    min-width: 52vh;
+    width: 43%;
+    min-width: 74vh;
     /* max-width: 56vh; */
     height: 65vh;
     overflow: hidden;
@@ -638,7 +638,7 @@ hr {
     display: inline-block;
     position: relative;
     margin: 2vh auto;
-    padding: .5vh 1vh;
+    padding: .5vh 3vh;
     border-radius: 0.5vh;
 }
 
@@ -836,7 +836,7 @@ hr {
 .app {
     margin-top: 5vh;
     margin-bottom: 5vh;
-    background-image: url("../Pics/app.jpg");
+    background-image: url("../Pics/app/app.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

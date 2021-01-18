@@ -1168,6 +1168,11 @@ nav .wrap-icon {
             0 4px 5px rgba(0, 0, 0, 0.05);
     }
 
+    .navbar-expand-xl .navbar-nav {
+            -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    }
+
     nav .navbar-nav> :last-child {
         border-bottom-left-radius: 1vh;
         border-bottom-right-radius: 1vh;

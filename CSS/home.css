@@ -694,7 +694,7 @@ hr {
 }
 
 .prototypes .title {
-    margin-bottom: 3vh;
+    margin-bottom: -1vh;
 }
 
 .prototypes .label {
@@ -778,7 +778,6 @@ hr {
 
 .prototypes .slick-prev {
     left: -6vh;
-    display: none;
 }
 
 .prototypes .slick-next {

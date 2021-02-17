@@ -396,7 +396,7 @@ hr {
 
 /*features*/
 .features {
-    padding-bottom: 4vh;
+    padding-bottom: 8vh;
 }
 
 .features .label {
@@ -437,7 +437,7 @@ hr {
 
 /*product*/
 .product {
-    padding: 6vh 3% 7vh;
+    padding: 10vh 3% 11vh;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -533,8 +533,8 @@ hr {
 
 /*highlight*/
 .highlight {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    /* padding-top: 5vh;
+    padding-bottom: 5vh; */
 }
 
 .highlight .row>div {
@@ -589,7 +589,7 @@ hr {
 
 /*demo*/
 .demo {
-    padding: 12vh 3% 10vh;
+    padding: 16vh 3% 9vh;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -601,7 +601,7 @@ hr {
     position: absolute;
     left: 0;
     right: 0;
-    top: 2vh;
+    top: 5vh;
 }
 
 .demo .img-wrap {
@@ -687,6 +687,18 @@ hr {
 /*prototypes*/
 .prototypes {
     padding: 6vh 8% 4vh;
+    background-image: url('../Pics/proto.png');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.prototypes .title {
+    margin-bottom: 3vh;
+}
+
+.prototypes .slick-track {
+    height: 70vh;
 }
 
 .prototypes .slick-slide {
@@ -698,7 +710,6 @@ hr {
 .prototypes .slick .slick-center {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 /* .prototypes .slick-track .item:nth-child(even){
@@ -710,6 +721,7 @@ hr {
 } */
 
 .prototypes .slick .item .bg {
+    background-color: #fff;
     height: 60vh;
     width: 100%;
     border-radius: 1vh;
@@ -721,16 +733,22 @@ hr {
     -webkit-transform: scale3d(0.8, 0.8, 1);
     transform: scale3d(0.8, 0.8, 1);
     transition: all 0.3s ease-in-out;
-    z-index: 1 !important;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        0 41.8px 23.4px rgba(0, 0, 0, 0.046),
+        0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
 .prototypes .slick .slick-center .bg {
     min-width: 70vh;
+    height: 65vh;
     width: 60%;
     opacity: 1;
     -webkit-transform: scale3d(1.0, 1.0, 1);
     transform: scale3d(1.0, 1.0, 1);
-    z-index: 2 !important;
 }
 
 .prototypes .slick-prev,
@@ -745,12 +763,12 @@ hr {
 }
 
 .prototypes .slick-prev {
-    left: -4vh;
+    left: -6vh;
     display: none;
 }
 
 .prototypes .slick-next {
-    right: -4vh;
+    right: -6vh;
 }
 
 .prototypes .slick-disabled {
@@ -759,8 +777,8 @@ hr {
 
 /*ourtimeline*/
 .ourtimeline {
-    padding-top: 5vh;
-    padding-bottom: 12vh;
+    padding-top: 9vh;
+    padding-bottom: 9vh;
     overflow: hidden !important;
 }
 

@@ -694,7 +694,7 @@ hr {
 }
 
 .prototypes .title {
-    margin-bottom: -1vh;
+    margin-bottom: -3vh;
 }
 
 .prototypes .label {
@@ -752,8 +752,12 @@ hr {
     height: 40vh;
 }
 
-.prototypes .slick .item .bg.mid {
-    height: 60vh;
+.prototypes .slick .item .bg.v2 {
+    height: 58vh;
+}
+
+.prototypes .slick .item .bg.v3 {
+    height: 64vh;
 }
 
 .prototypes .slick .slick-center .bg {
@@ -944,7 +948,6 @@ hr {
 /*app*/
 .app {
     margin-top: 5vh;
-    margin-bottom: 5vh;
     background-image: url("../Pics/app/app.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -1044,9 +1047,17 @@ hr {
     transition: 0.3s;
 }
 
+/*bottom page*/
+.bottompage {
+    background-image: url('../Pics/bottom.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 /*funding*/
 .funding {
-    padding-top: 3vh;
+    padding-top: 8vh;
 }
 
 .funding .row {
@@ -1167,11 +1178,12 @@ hr {
     font-size: 2.2vh;
     color: #6d3dff;
     min-width: 40vh;
-    width: 30%;
+    width: 28%;
     max-width: 60vh;
     margin: auto;
     margin-top: 0.7vh;
     font-family: 'Metropolis';
+    font-weight: 100;
 }
 
 .about .row {
@@ -1187,6 +1199,7 @@ hr {
     max-width: 28vh;
     width: 13%;
     padding-bottom: 2vh;
+    background: #fff;
     box-shadow:
         0 2.8px 2.2px rgba(0, 0, 0, 0.014),
         0 6.7px 5.3px rgba(0, 0, 0, 0.018),
@@ -1210,14 +1223,16 @@ hr {
 .about .label {
     font-size: 2vh;
     text-align: center;
-    margin-top: 1vh;
+    margin-top: 1.2vh;
+    color: #000;
+    font-weight: 100;
 }
 
 .about .desc {
     text-align: center;
     font-size: 1.8vh;
-    margin-top: 0.5vh;
     color: #6d3dff;
+    font-weight: 100;
 }
 
 /*footer*/

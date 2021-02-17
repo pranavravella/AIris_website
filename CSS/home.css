@@ -138,6 +138,9 @@ nav .center {
 hr {
     width: 80%;
     margin: auto;
+    height: 0.1px;
+    border: 0;
+    background-color: #ddd;
 }
 
 /* Icon 3 */
@@ -1004,9 +1007,14 @@ hr {
     min-width: 100%;
 }
 
+.funding .partners {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
 .funding .partners img {
     height: 10vh;
-    margin: 2vh 2%;
+    margin: 3vh 3%;
 }
 
 /*faqs*/

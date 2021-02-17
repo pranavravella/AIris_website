@@ -252,6 +252,7 @@ hr {
 .about .title,
 .product .title,
 .demo .title,
+.prototypes .title,
 .funding .title {
     color: #000;
     text-align: center;
@@ -588,7 +589,7 @@ hr {
 
 /*demo*/
 .demo {
-    padding: 14vh 3% 6vh;
+    padding: 12vh 3% 10vh;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -600,7 +601,7 @@ hr {
     position: absolute;
     left: 0;
     right: 0;
-    top: 3vh;
+    top: 2vh;
 }
 
 .demo .img-wrap {
@@ -683,6 +684,57 @@ hr {
     color: #6d3dff;
 }
 
+/*prototypes*/
+.prototypes {
+    padding: 6vh 3% 4vh;
+}
+
+.prototypes .title {
+    margin-bottom: 1vh;
+}
+
+.slick .item .bg {
+    height: 550px;
+    border-radius: 1vh;
+    background-position: center;
+    background-size: cover;
+    transition: .3s;
+    margin: 0 -24px;
+    opacity: .2;
+    -webkit-transform: scale3d(0.8, 0.8, 1);
+    transform: scale3d(0.8, 0.8, 1);
+    transition: all 0.3s ease-in-out;
+}
+
+.slick .slick-list {
+    padding: 40px 0 !important;
+}
+
+.slick .slick-center .bg {
+    opacity: 1;
+    -webkit-transform: scale3d(1.0, 1.0, 1);
+    transform: scale3d(1.0, 1.0, 1);
+}
+
+.slick-slide {
+    outline: none
+}
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+}
+
+.slick-prev {
+    left: 100px;
+}
+
+.slick-next {
+    right: 100px;
+}
+
 /*ourtimeline*/
 .ourtimeline {
     padding-top: 5vh;
@@ -705,7 +757,7 @@ hr {
     margin: auto;
 }
 
-.ourtimeline .pad::-webkit-scrollbar{
+.ourtimeline .pad::-webkit-scrollbar {
     height: 0;
     width: 0;
 }
@@ -771,11 +823,11 @@ hr {
     position: relative;
 }
 
-.ourtimeline .event:first-child{
+.ourtimeline .event:first-child {
     margin-left: 0%;
 }
 
-.ourtimeline .event:last-child{
+.ourtimeline .event:last-child {
     margin-right: 0%;
 }
 
@@ -907,7 +959,7 @@ hr {
     margin-left: 5vh;
 }
 
-.app div.wrap{
+.app div.wrap {
     width: 60vh;
     padding-bottom: 5vh;
     margin-left: 5vh;
@@ -1179,8 +1231,8 @@ nav .wrap-icon {
     }
 
     .navbar-expand-xl .navbar-nav {
-            -ms-flex-direction: column !important;
-            flex-direction: column !important;
+        -ms-flex-direction: column !important;
+        flex-direction: column !important;
     }
 
     nav .navbar-nav> :last-child {
@@ -1212,7 +1264,7 @@ nav .wrap-icon {
         background-color: #ddd !important;
     }
 
-    .landing .text-wrap{
+    .landing .text-wrap {
         padding-bottom: 2vh;
     }
 }

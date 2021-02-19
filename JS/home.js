@@ -6,11 +6,6 @@ function initialize() {
         isMobile = true;
     }
 
-    //Adds in mobile css
-    if (isMobile) {
-        $("head").append('<link rel="stylesheet" href="CSS/mobile.css">');
-    }
-
     //In page link scrolls
     $('a[href^="#"]').on('click', function (event) {
         event.preventDefault();
@@ -53,8 +48,8 @@ function initialize() {
                 $("nav .left, nav .right").css('padding-top', '0vh');
                 $("nav span").css('color', '#3bb5fc');
 
-                if ($("nav #nav-icon3").attr("expanded") == "true") {
-                    $("nav #nav-icon3").click();
+                if ($("nav .navbar-toggler").attr("expanded") == "true") {
+                    $("nav .navbar-toggler").click();
                 }
             }
         }
@@ -72,7 +67,7 @@ function initialize() {
     }, 50)
 
     //Navbar button mobile
-    $("nav #nav-icon3").on("click", function (e) {
+    $("nav .navbar-toggler").on("click", function (e) {
         $(this).toggleClass('open');
         if ($(this).attr("expanded") == "true") {
             $(".navbar-nav").css("opacity", "0");

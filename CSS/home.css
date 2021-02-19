@@ -144,7 +144,7 @@ hr {
     background-color: #ddd;
 }
 
-/* Icon 3 */
+/*navbar toggler*/
 .wrap-icon {
     position: fixed;
     top: 0;
@@ -154,7 +154,7 @@ hr {
     z-index: 2;
 }
 
-#nav-icon3 {
+.navbar-toggler {
     width: 5vh;
     position: absolute;
     -webkit-transform: rotate(0deg);
@@ -170,7 +170,7 @@ hr {
     top: 1.4vh;
 }
 
-#nav-icon3 span {
+.navbar-toggler span {
     display: block;
     position: absolute;
     height: 2px;
@@ -190,40 +190,40 @@ hr {
 }
 
 /* Icon 3 */
-#nav-icon3 span:nth-child(1) {
+.navbar-toggler span:nth-child(1) {
     top: 0px;
 }
 
-#nav-icon3 span:nth-child(2),
-#nav-icon3 span:nth-child(3) {
+.navbar-toggler span:nth-child(2),
+.navbar-toggler span:nth-child(3) {
     top: 1.5vh;
 }
 
-#nav-icon3 span:nth-child(4) {
+.navbar-toggler span:nth-child(4) {
     top: 3vh;
 }
 
-#nav-icon3.open span:nth-child(1) {
+.navbar-toggler.open span:nth-child(1) {
     width: 0%;
     left: 50%;
     transform: scale(0);
 }
 
-#nav-icon3.open span:nth-child(3) {
+.navbar-toggler.open span:nth-child(3) {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
-#nav-icon3.open span:nth-child(2) {
+.navbar-toggler.open span:nth-child(2) {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
 
-#nav-icon3.open span:nth-child(4) {
+.navbar-toggler.open span:nth-child(4) {
     width: 0%;
     transform: scale(0);
     left: 50%;
@@ -590,7 +590,7 @@ hr {
 
 /*demo*/
 .demo {
-    padding: 16vh 3% 9vh;
+    padding: 18vh 3% 10vh;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -602,7 +602,7 @@ hr {
     position: absolute;
     left: 0;
     right: 0;
-    top: 5vh;
+    top: 7vh;
 }
 
 .demo .img-wrap {
@@ -1149,9 +1149,12 @@ hr {
     padding-right: 20%;
 }
 
+.funding .partners a {
+    margin: 3vh 3%;
+}
+
 .funding .partners img {
     height: 10vh;
-    margin: 3vh 3%;
 }
 
 /*faqs*/
@@ -1198,7 +1201,7 @@ hr {
     font-size: 2.2vh;
     color: #3bb5fc;
     min-width: 40vh;
-    width: 28%;
+    width: 25%;
     max-width: 60vh;
     margin: auto;
     margin-top: 0.7vh;
@@ -1300,7 +1303,6 @@ nav .wrap-icon {
         background-color: #fff;
         width: 100%;
         position: fixed;
-        padding-bottom: 1vh;
         top: calc(6vh - 1px);
         left: 0;
         border-bottom-left-radius: 1vh;

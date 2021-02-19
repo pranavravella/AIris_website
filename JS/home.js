@@ -48,8 +48,8 @@ function initialize() {
                 $("nav .left, nav .right").css('padding-top', '0vh');
                 $("nav span").css('color', '#3bb5fc');
 
-                if ($("nav .navbar-toggler").attr("expanded") == "true") {
-                    $("nav .navbar-toggler").click();
+                if ($("nav .navbartoggler").attr("expanded") == "true") {
+                    $("nav .navbartoggler").click();
                 }
             }
         }
@@ -67,7 +67,7 @@ function initialize() {
     }, 50)
 
     //Navbar button mobile
-    $("nav .navbar-toggler").on("click", function (e) {
+    $("nav .navbartoggler").on("click", function (e) {
         $(this).toggleClass('open');
         if ($(this).attr("expanded") == "true") {
             $(".navbar-nav").css("opacity", "0");

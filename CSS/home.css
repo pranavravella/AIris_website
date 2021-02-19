@@ -687,7 +687,7 @@ hr {
 
 /*prototypes*/
 .prototypes {
-    padding: 6vh 8% 4vh;
+    padding: 6vh 8% 2vh;
     /* background-image: url('../Pics/proto.png'); */
     background-size: cover;
     background-position: bottom;
@@ -730,7 +730,7 @@ hr {
 }
 
 .prototypes .slick-track {
-    height: 80vh;
+    height: 84vh;
 }
 
 .prototypes .slick .slick-center {
@@ -1216,7 +1216,8 @@ hr {
 
 .about .row>div {
     height: auto;
-    border-radius: 0.5vh;
+    border-radius: 1vh;
+    overflow: hidden;
     margin: 2vh;
     min-width: 25vh;
     max-width: 28vh;
@@ -1235,7 +1236,6 @@ hr {
 .about .img-wrap {
     height: 23vh;
     overflow: hidden;
-    border-radius: 0.5vh 0.5vh 0 0;
 }
 
 .about img {

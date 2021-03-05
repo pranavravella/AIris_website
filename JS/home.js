@@ -35,11 +35,6 @@ function initialize() {
             }
         });
 
-    //Mobile
-    $('*').on('touchend', function () {
-        $(this)[0].click();
-    });
-
     //Navbar animation
     var marginleft = 0;
     var prev = -1;

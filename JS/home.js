@@ -97,7 +97,6 @@ function initialize() {
     $('.slick').slick({
         dots: false,
         infinite: false,
-        touchThreshold : 100,
         speed: 300,
         slidesToShow: 1,
         variableWidth: true,

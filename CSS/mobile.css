@@ -86,29 +86,30 @@
     }
 
     .prototypes .slick-track {
-        height: 50vh;
+        height: 60vh;
     }
 
     .prototypes .slick .item {
         width: 40vh;
     }
 
-    .prototypes .slick .item .bg {
-        height: 40vh;
-    }
-
-    .prototypes .slick .item .bg.smaller {
-        height: 30vh;
+    .prototypes .slick .item .bg.v2 {
+        height: 45vh;
     }
     
-    .prototypes .slick .item .bg.mid {
-        height: 40vh;
+    .prototypes .slick .item .bg.v3 {
+        height: 48vh;
     }
     
     .prototypes .slick .slick-center .bg {
         min-width: 40vh;
         height: 45vh;
         width: 30%;
+    }
+
+    .ourtimeline {
+        padding-top: 6vh;
+        padding-bottom: 6vh;
     }
 
     .app .text {

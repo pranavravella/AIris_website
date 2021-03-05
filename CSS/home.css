@@ -762,10 +762,6 @@ hr {
         0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
-.prototypes .slick .item .bg.smaller {
-    height: 40vh;
-}
-
 .prototypes .slick .item .bg.v2 {
     height: 58vh;
 }

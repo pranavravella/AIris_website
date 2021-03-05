@@ -147,9 +147,21 @@
         height: 30vh;
     }
 
+    .funding .partners {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
     .funding .partners img {
-        margin: 2vh 10%;
+        margin: 0vh 10%;
         height: 10vh;
+    }
+
+    .funding .partners a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .faqs .row {

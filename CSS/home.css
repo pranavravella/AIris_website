@@ -1210,7 +1210,7 @@ hr {
 
 .about .row>div {
     height: auto;
-    border-radius: 1vh;
+    border-radius: .75vh;
     overflow: hidden;
     margin: 2vh;
     min-width: 25vh;
@@ -1221,10 +1221,10 @@ hr {
     box-shadow:
         0 2.8px 2.2px rgba(0, 0, 0, 0.014),
         0 6.7px 5.3px rgba(0, 0, 0, 0.018),
-        0 1.5px 1px rgba(0, 0, 0, 0.02),
-        0 2.3px 7.9px rgba(0, 0, 0, 0.012),
+        0 1.5px 1px rgba(0, 0, 0, 0.01),
+        0 2.3px 3px rgba(0, 0, 0, 0.012),
         0 5px 5px rgba(0, 0, 0, 0.016),
-        0 8px 8px rgba(0, 0, 0, 0.05);
+        0 5px 5px rgba(0, 0, 0, 0.01);
 }
 
 .about .img-wrap {
@@ -1238,16 +1238,16 @@ hr {
 }
 
 .about .label {
-    font-size: 2vh;
+    font-size: 2.3vh;
     text-align: center;
-    margin-top: 1.2vh;
+    margin-top: 1vh;
     color: #3bb5fc;
     font-weight: 100;
 }
 
 .about .desc {
     text-align: center;
-    font-size: 1.8vh;
+    font-size: 2vh;
     color: #6d3dff;
     font-weight: 100;
 }

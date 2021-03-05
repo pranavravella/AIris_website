@@ -19,7 +19,6 @@ function initialize() {
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                 if (target.length) {
                     event.preventDefault();
-                    console.log(target.offset().top)
                     $('html, body').animate({
                         scrollTop: target.offset().top - $(window).height() * 0.045
                     }, 800, function () {

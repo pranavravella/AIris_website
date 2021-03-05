@@ -1140,11 +1140,11 @@ hr {
 }
 
 .funding .partners a {
-    margin: 3vh 3%;
+    margin: 3vh 5vh;
 }
 
 .funding .partners img {
-    height: 10vh;
+    height: 11vh;
 }
 
 /*faqs*/
@@ -1188,10 +1188,10 @@ hr {
 
 .about .subtitle {
     text-align: center;
-    font-size: 2.2vh;
+    font-size: 2vh;
     color: #3bb5fc;
     min-width: 40vh;
-    width: 25%;
+    width: 20%;
     max-width: 60vh;
     margin: auto;
     margin-top: 0.7vh;
@@ -1206,37 +1206,40 @@ hr {
 
 .about .row>div {
     height: auto;
-    border-radius: .75vh;
-    overflow: hidden;
     margin: 2vh;
     min-width: 25vh;
     max-width: 28vh;
-    width: 13%;
+    width: 15%;
     padding-bottom: 2vh;
     background: #fff;
-    box-shadow:
+    /* box-shadow:
         0 2.8px 2.2px rgba(0, 0, 0, 0.014),
         0 6.7px 5.3px rgba(0, 0, 0, 0.018),
         0 1.5px 1px rgba(0, 0, 0, 0.01),
         0 2.3px 3px rgba(0, 0, 0, 0.012),
         0 5px 5px rgba(0, 0, 0, 0.016),
-        0 5px 5px rgba(0, 0, 0, 0.01);
+        0 5px 5px rgba(0, 0, 0, 0.01); */
 }
 
 .about .img-wrap {
-    height: 23vh;
+    height: 30vh;
+    border-radius: .75vh;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about img {
-    width: 100%;
-    min-height: 16vh;
+    width: auto;
+    height: 30vh;
+    border-radius: .75vh;
 }
 
 .about .label {
     font-size: 2.3vh;
     text-align: center;
-    margin-top: 1vh;
+    margin-top: 2vh;
     color: #3bb5fc;
     font-weight: 100;
 }

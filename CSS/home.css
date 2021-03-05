@@ -432,7 +432,7 @@ hr {
 
 /*product*/
 .product {
-    padding: 10vh 3% 11vh;
+    padding: 14vh 3% 14vh;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -584,7 +584,7 @@ hr {
 
 /*demo*/
 .demo {
-    padding: 18vh 3% 10vh;
+    padding: 23vh 3% 16vh;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -596,7 +596,7 @@ hr {
     position: absolute;
     left: 0;
     right: 0;
-    top: 7vh;
+    top: 12vh;
 }
 
 .demo .img-wrap {
@@ -681,7 +681,7 @@ hr {
 
 /*prototypes*/
 .prototypes {
-    padding: 6vh 8% 2vh;
+    padding: 13vh 8% 9vh;
     /* background-image: url('../Pics/proto.png'); */
     background-size: cover;
     background-position: bottom;
@@ -805,8 +805,8 @@ hr {
 
 /*ourtimeline*/
 .ourtimeline {
-    padding-top: 9vh;
-    padding-bottom: 9vh;
+    padding-top: 12vh;
+    padding-bottom: 12vh;
     overflow: hidden !important;
 }
 
@@ -821,7 +821,7 @@ hr {
 }
 
 .ourtimeline .pad {
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 
@@ -868,8 +868,8 @@ hr {
     width: calc(80% - 20vh);
     margin: auto;
     height: 1vh;
-    background-image: linear-gradient(to right, #06D6A0, #3bb5fc);
-    border-radius: 5vh;
+    background-image: linear-gradient(to left, #6e44ffff, #3bb5fc);
+    border-radius: 1vh;
     position: absolute;
     top: 11vh;
 }
@@ -900,9 +900,9 @@ hr {
 }
 
 .ourtimeline .dot {
-    width: 2vh;
+    width: 1vh;
     height: 2vh;
-    background: #6d3dff;
+    /* background: #06D6A0; */
     border-radius: 100%;
     position: absolute;
     z-index: 10;
@@ -975,7 +975,7 @@ hr {
     width: 100%;
     top: 0;
     left: 0;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4), transparent);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2), transparent);
 }
 
 .app .row {
@@ -1059,15 +1059,35 @@ hr {
 
 /*bottom page*/
 .bottompage {
-    background-image: url('../Pics/bottom.png');
+    /* background-image: url('../Pics/bottom.png'); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
+}
+
+.bottompage > .img-wrap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.bottompage > .img-wrap img {
+    width: 100%;
+    min-width: 170vh;
 }
 
 /*funding*/
 .funding {
-    padding-top: 8vh;
+    padding-top: 12vh;
+    padding-bottom: 10vh;
 }
 
 .funding .row {
@@ -1182,8 +1202,8 @@ hr {
 
 /*about*/
 .about {
-    padding-top: 5vh;
-    padding-bottom: 4vh;
+    padding-top: 10vh;
+    padding-bottom: 7vh;
 }
 
 .about .subtitle {

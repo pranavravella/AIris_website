@@ -584,7 +584,7 @@ hr {
 
 /*demo*/
 .demo {
-    padding: 23vh 3% 16vh;
+    padding: 23vh 3% 13vh;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -681,7 +681,7 @@ hr {
 
 /*prototypes*/
 .prototypes {
-    padding: 13vh 8% 9vh;
+    padding: 10vh 8% 6vh;
     /* background-image: url('../Pics/proto.png'); */
     background-size: cover;
     background-position: bottom;
@@ -805,8 +805,8 @@ hr {
 
 /*ourtimeline*/
 .ourtimeline {
-    padding-top: 12vh;
-    padding-bottom: 12vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     overflow: hidden !important;
 }
 
@@ -1087,7 +1087,7 @@ hr {
 /*funding*/
 .funding {
     padding-top: 12vh;
-    padding-bottom: 10vh;
+    padding-bottom: 8vh;
 }
 
 .funding .row {
@@ -1202,8 +1202,8 @@ hr {
 
 /*about*/
 .about {
-    padding-top: 10vh;
-    padding-bottom: 7vh;
+    padding-top: 8vh;
+    padding-bottom: 5vh;
 }
 
 .about .subtitle {

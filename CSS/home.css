@@ -1232,13 +1232,6 @@ hr {
     width: 15%;
     padding-bottom: 2vh;
     background: #fff;
-    /* box-shadow:
-        0 2.8px 2.2px rgba(0, 0, 0, 0.014),
-        0 6.7px 5.3px rgba(0, 0, 0, 0.018),
-        0 1.5px 1px rgba(0, 0, 0, 0.01),
-        0 2.3px 3px rgba(0, 0, 0, 0.012),
-        0 5px 5px rgba(0, 0, 0, 0.016),
-        0 5px 5px rgba(0, 0, 0, 0.01); */
 }
 
 .about .img-wrap {
@@ -1248,6 +1241,8 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    background-color: #000;
 }
 
 .about img {

@@ -112,6 +112,11 @@
         padding-bottom: 6vh;
     }
 
+    .ourtimeline .pad {
+        width: 90%;
+        margin: auto;
+    }
+
     .app .text {
         justify-content: center
     }
@@ -176,6 +181,12 @@
 
     .faqs .desc {
         font-size: 2vh;
+    }
+
+    .about img {
+        width: auto;
+        height: 30vh;
+        border-radius: .75vh;
     }
 }
 

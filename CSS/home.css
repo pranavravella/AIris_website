@@ -432,7 +432,7 @@ hr {
 
 /*product*/
 .product {
-    padding: 14vh 3% 14vh;
+    padding: 12vh 3%;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -457,8 +457,7 @@ hr {
 
 .product img {
     width: 100%;
-    min-width: 55vh;
-    max-width: 70vh;
+    max-width: 65vh;
     margin: 0 auto;
     display: block;
     animation: bobble 3s infinite alternate;
@@ -478,11 +477,19 @@ hr {
 .product .right {
     flex: 1 1;
     min-width: 45vh;
-    max-width: 70vh;
+    max-width: 50vh;
     display: flex;
     align-items: center;
     align-content: center;
     flex-flow: wrap;
+}
+
+.product .left {
+    text-align: right;
+}
+
+.product .right {
+    text-align: left;
 }
 
 .product .feature {
@@ -496,25 +503,48 @@ hr {
     font-size: 2.6vh;
     color: #1B98E0;
     font-family: 'Metropolis';
-    padding-left: 20%;
 }
 
-.product .desc {
+.product .left .label {
+    padding-right: 23%;
+}
+
+.product .right .label {
+    padding-left: 23%;
+}
+
+.product .left .desc {
     font-size: 1.8vh;
-    padding-left: 20%;
-    padding-right: 10%;
+    padding-right: 23%;
 }
 
-.product .icon-wrap {
+.product .right .desc {
+    font-size: 1.8vh;
+    padding-left: 23%;
+}
+
+.product .left .icon-wrap {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0%;
+    right: 0%;
     display: flex;
     align-items: center;
     justify-content: center;
     /* background-color: #000; */
-    width: 20%;
+    width: 23%;
+}
+
+.product .right .icon-wrap {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #000; */
+    width: 23%;
 }
 
 .product i {
@@ -958,7 +988,7 @@ hr {
 /*app*/
 .app {
     margin-top: 5vh;
-    background-image: url("../Pics/app/app.jpg");
+    /* background-image: url("../Pics/app/app.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -975,7 +1005,7 @@ hr {
     width: 100%;
     top: 0;
     left: 0;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2), transparent);
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2), transparent); */
 }
 
 .app .row {
@@ -1003,15 +1033,14 @@ hr {
     width: 100%;
     top: 0;
     left: 0;
-    height: 60vh;
-    overflow: hidden;
+    height: auto;
+    /* overflow: hidden; */
 }
 
 .app .img-wrap img {
     width: 55vh;
     max-width: 95%;
-    position: absolute;
-    bottom: -17vh;
+    /* position: absolute; */
     right: 0%;
 }
 
@@ -1021,7 +1050,6 @@ hr {
     width: 60vh;
     padding-top: 4vh;
     font-family: 'Roboto';
-    color: #fff;
     font-weight: 100;
     margin-left: 5vh;
 }
@@ -1034,7 +1062,6 @@ hr {
 
 .app .desc {
     font-size: 2.2vh;
-    color: #fff;
     margin-bottom: 1vh;
 }
 

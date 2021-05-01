@@ -248,7 +248,8 @@ hr {
 .product .title,
 .demo .title,
 .prototypes .title,
-.funding .title {
+.funding .title,
+.app .title {
     color: #000;
     text-align: center;
     font-size: 5vh;
@@ -432,7 +433,7 @@ hr {
 
 /*product*/
 .product {
-    padding: 12vh 3%;
+    padding: 10vh 3%;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -450,14 +451,13 @@ hr {
 .product .img-wrap {
     width: 30%;
     min-width: 55vh;
-    padding-top: 1vh;
-    padding-bottom: 2vh;
+    padding: 1vh 2vh 2vh;
     overflow: hidden;
 }
 
 .product img {
     width: 100%;
-    max-width: 65vh;
+    max-width: 50vh;
     margin: 0 auto;
     display: block;
     animation: bobble 3s infinite alternate;
@@ -987,45 +987,18 @@ hr {
 
 /*app*/
 .app {
-    margin-top: 5vh;
-    /* background-image: url("../Pics/app/app.jpg"); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: auto;
-    display: flex;
-    align-items: center;
-    position: relative;
-    justify-content: center;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
 }
 
-.app .cover {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2), transparent); */
-}
-
-.app .row {
-    justify-content: center;
-}
-
-.app .row>div {
-    padding: 0 !important;
+.app .desc {
+    font-size: 2.2vh;
     width: 50%;
-    min-width: 60vh;
-}
-
-.app .text {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    flex-flow: wrap;
-    min-height: 30vh;
-    height: auto;
-    position: relative;
+    margin: 2vh auto 5vh;
+    text-align: center;
+    max-width: 100vh;
+    color: #3bb5fc;
+    font-weight: 100;
 }
 
 .app .img-wrap {
@@ -1034,54 +1007,18 @@ hr {
     top: 0;
     left: 0;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* overflow: hidden; */
 }
 
 .app .img-wrap img {
-    width: 55vh;
-    max-width: 95%;
+    width: 70%;
+    max-width: 130vh;
+    min-width: 80vh;
     /* position: absolute; */
     right: 0%;
-}
-
-.app .label {
-    font-size: 5vh;
-    text-align: left;
-    width: 60vh;
-    padding-top: 4vh;
-    font-family: 'Roboto';
-    font-weight: 100;
-    margin-left: 5vh;
-}
-
-.app div.wrap {
-    width: 60vh;
-    padding-bottom: 5vh;
-    margin-left: 5vh;
-}
-
-.app .desc {
-    font-size: 2.2vh;
-    margin-bottom: 1vh;
-}
-
-.app .text a {
-    width: auto;
-    overflow: hidden;
-    margin-right: 1vh;
-}
-
-/* .app .text a:first-of-type {
-    padding: 2vh 2% 2vh 5%;
-}
-
-.app .text a:last-of-type {
-    padding: 2vh 2% 2vh 1%;
-} */
-
-.app .text img {
-    height: 6vh;
-    transition: 0.3s;
 }
 
 /*bottom page*/
@@ -1093,7 +1030,7 @@ hr {
     position: relative;
 }
 
-.bottompage > .img-wrap {
+.bottompage>.img-wrap {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1106,14 +1043,14 @@ hr {
     overflow: hidden;
 }
 
-.bottompage > .img-wrap img {
+.bottompage>.img-wrap img {
     width: 100%;
     min-width: 170vh;
 }
 
 /*funding*/
 .funding {
-    padding-top: 10vh;
+    padding-top: 8vh;
     padding-bottom: 8vh;
 }
 

@@ -130,12 +130,14 @@ function initialize() {
             if (!isBeforeProduct) {
                 $(".product .img-wrap").insertBefore(".product .left");
                 $(".product .img-wrap").css("width", "100%");
+                $(".product .left").addClass("right");
             }
             isBeforeProduct = true;
         } else {
             if (isBeforeProduct) {
                 $(".product .left").insertBefore(".product .img-wrap");
                 $(".product .img-wrap").css("width", "30%");
+                $(".product .left").removeClass("right");
             }
             isBeforeProduct = false;
         }
